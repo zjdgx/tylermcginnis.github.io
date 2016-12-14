@@ -1,5 +1,5 @@
 ---
-title: "Building User Interfaces with Pure Functions and Function Composition in React.js"
+title: "Building User Interfaces with Pure Functions and Function Composition in React"
 date: "2016-02-20T13:12:03.284Z"
 layout: post
 path: "/building-user-interfaces-with-pure-functions-and-function-composition-in-react-js-34b999ddeaba/"
@@ -68,7 +68,8 @@ var ProfilePic = React.createClass({
     )
   }
 })
-
+```
+```javascript
 var ProfileLink = React.createClass({
   render: function() {
    return (
@@ -78,7 +79,8 @@ var ProfileLink = React.createClass({
     )
   }
 })
-
+```
+```javascript
 var Avatar = React.createClass({
   render: function() {
     return (
@@ -89,7 +91,8 @@ var Avatar = React.createClass({
    )
   }
 })
-
+```
+```javascript
 <Avatar username="tylermcginnis" />
 ```
 
@@ -102,7 +105,8 @@ normal functions (and which we'll cover more in depth later in the course).
 var ProfilePic = function (props) {
   return <img src={'https://photo.fb.com/' + props.username'} />
 }
-
+```
+```javascript
 var ProfileLink = function (props) {
   return (
     <a href={'https://www.fb.com/' + props.username}>
@@ -110,7 +114,8 @@ var ProfileLink = function (props) {
     </a>
   )
 }
-
+```
+```javascript
 var Avatar = function (props) {
   return (
     <div>
@@ -119,7 +124,8 @@ var Avatar = function (props) {
     </div>
   )
 }
-
+```
+```javascript
 <Avatar username="tylermcginnis" />
 ```
 
@@ -186,6 +192,3 @@ it's a good idea to get used to making your functions pure and pushing "side
 effects" to the boundaries of your program. I'll say this throughout the course,
 React will make you a better developer if you learn React the right way.
 Learning to write pure functions is the first step on that journey.
-
-> If you enjoyed this post, check out [React.js Program](http://www.reactjsprogram.com/?utm_campaign=TylerMcGinnis.com). It’s a program I built to help ease the pain of getting familiar with the React ecosystem (including Redux, ImmutableJS, React Native, Universal React,
-etc

@@ -112,7 +112,8 @@ will get called right after the component is mounted to the DOM.
 ```javascript
 var FriendsList = React.createClass({
   componentDidMount: function () {
-    return Axios.get(this.props.url).then(this.props.callback)
+    return Axios.get(this.props.url)
+      .then(this.props.callback)
   },
   render: function () {
     ...

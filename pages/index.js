@@ -5,7 +5,9 @@ import { prefixLink } from 'gatsby-helpers'
 import SiteSidebar from '../components/SiteSidebar'
 
 function strip (str) {
-  return str.replace(/<\/?[^>]+(>|$)/g, "")
+  return str.includes('<hide-from-preview>') === true
+    ? str.split('</hide-from-preview>')[1].replace(/<\/?[^>]+(>|$)/g, "")
+    : str.replace(/<\/?[^>]+(>|$)/g, "")
 }
 
 SiteIndex.propTypes = {
