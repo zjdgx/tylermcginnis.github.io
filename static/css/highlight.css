@@ -23,7 +23,7 @@ pre code {
 	overflow-x: auto;
 	padding: 0.5em 1em;
 	color: #333;
-	background: #f8f8f8;
+	background: transparent;
 }
 .hljs-comment, .hljs-quote {
 	color: #998;

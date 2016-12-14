@@ -4,6 +4,10 @@ import moment from 'moment'
 import { prefixLink } from 'gatsby-helpers'
 import SiteSidebar from '../components/SiteSidebar'
 
+function strip (str) {
+  return str.replace(/<\/?[^>]+(>|$)/g, "")
+}
+
 SiteIndex.propTypes = {
   route: React.PropTypes.object
 }
@@ -19,7 +23,7 @@ export default function SiteIndex (props) {
               .filter((page) => page.data.layout === 'post')
               .sort((a,b) => b.data.date > a.data.date)
               .map((page) => {
-                const { title, description, date } = page.data
+                const { title, description, date, body } = page.data
                 return (
                   <div key={date} className='blog-post'>
                     <time dateTime={moment(date).format('MMMM D, YYYY')}>
@@ -32,7 +36,7 @@ export default function SiteIndex (props) {
                           {title}
                       </Link>
                     </h2>
-                    <p>{description}</p>
+                    <p>{strip(body).slice(0, 180) + '...'}</p>
                     <Link className='readmore' to={ prefixLink(page.path) }>
                       More
                     </Link>

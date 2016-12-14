@@ -3,7 +3,6 @@ title: "400: My Declarative Approach to Accomplishing Goals"
 date: "2016-08-01T18:12:03.284Z"
 layout: post
 path: "/400-my-declarative-approach-to-accomplishing-goals-9d2e1d2e5307/"
-description: "I commonly get overwhelmed with the details when trying to be productive. Here's my approach for using some declarative knowledge to better improve and accomplish the goals I set."
 ---
 
 As the amount of items we need to finish for a given day grows, one or both of
