@@ -4,7 +4,7 @@
   "description": "Blog for tylermcginnis.com",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "build": "npm run clean & gatsby build & copy",
     "clean:public": "rm -rf public",
     "clean": "npm run clean:public",
@@ -12,7 +12,7 @@
     "copy": "npm run copy:files",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "keywords": [
     "react",

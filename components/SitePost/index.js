@@ -22,11 +22,11 @@ export default function SitePost ({route}) {
       </div>
       <div className='blog-single'>
         <div className='text'>
-          <h1>{title}</h1>
           <div className='date-published'>
-            <em>{moment(date).format('D MMM YYYY')}</em>
+            {moment(date).format('D MMM YYYY')}
           </div>
-          <div dangerouslySetInnerHTML={{__html: body}} />
+          <h1>{title}</h1>
+          <div className='blog-body' dangerouslySetInnerHTML={{__html: body}} />
         </div>
         <div className='footer'>
           <a style={{textDecoration: 'underline'}} href={config.siteTwitterUrl}>{config.siteAuthor}</a>

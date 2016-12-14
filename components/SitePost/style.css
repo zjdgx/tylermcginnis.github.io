@@ -44,22 +44,38 @@
 .blog-single h1 {
 	text-align: center;
 	margin-top: 30px;
+  font-weight: 500;
+  text-align: left;
+  font-size: 40px;
+  line-height: 1.04;
 }
 .blog-single .text {
 	line-height: 31px;
 	margin-bottom: 31px;
+	font-size: 21px;
+}
+.blog-body {
+	line-height: 1.58;
 }
 .blog-single h1, .blog-single .date-published, .blog-single .text *:not(div) {
-	max-width: 630px;
+	max-width: 740px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.date-published {
+	font-size: 16px;
+	padding: 20px 16px;
+	margin: 0;
+	line-height: normal;
+	text-align: right;
 }
 .blog-single .text img {
 	max-width: 100%;
 	height: auto;
+	margin: 30px 0;
 }
 .blog-single .footer {
-	max-width: 630px;
+	max-width: 740px;
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 31px;
@@ -69,8 +85,7 @@
 	position: fixed;
 	left: 20px;
 	font-size: 16px;
-	text-align: center;
-	padding: 8px 16px;
+	padding: 20px 16px;
 	color: rgba(0,0,0,.8);
 	font-weight: 400;
 	border-radius: 3px;
