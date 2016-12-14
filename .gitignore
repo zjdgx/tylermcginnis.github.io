@@ -1,7 +1,0 @@
-node_modules/
-public
-.DS_STORE
-
-.gatsby-context.js
-pages/.manifest
-.idea
