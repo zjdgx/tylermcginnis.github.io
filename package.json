@@ -10,7 +10,8 @@
     "copy": "cp pages/*.{pdf,txt,png,jpg,jpeg,gif} public/",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build & gh-pages -d public -b master"
+    "push-prod": "gh-pages -d public -b master",
+    "deploy": "npm run clean && gatsby build && npm run push-prod"
   },
   "keywords": [
     "react",
