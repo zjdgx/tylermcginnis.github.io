@@ -6,11 +6,6 @@ import { config } from 'config'
 import './style.css'
 import '../../static/css/highlight.css'
 
-SitePost.propTypes = {
-  post: React.PropTypes.object.isRequired,
-  pages: React.PropTypes.array,
-}
-
 export default function SitePost ({route}) {
   const { title, date, body } = route.page.data
   return (
