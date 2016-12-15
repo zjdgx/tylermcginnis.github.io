@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0"/><style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,cite,code,details,figcaption,figure,footer,header,hgroup,main,nav,section,small,summary{display:block}article,article ol,article ul,blockquote,body,div,figure,footer,header,input,nav,section{box-sizing:border-box}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr{letter-spacing:.1em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:600}dfn{font-style:italic}mark{background:#ff0;color:#000}small{font-size:70%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}em,i{line-height:0;position:relative;vertical-align:baseline}img{border:0}svg:not(:root){overflow:hidden}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}img{max-width:100%;display:block;margin:inherit auto}.wrapper{max-width:1070px;margin-left:auto;margin-right:auto}.wrapper:after,.wrapper:before{content:"";display:table}.wrapper:after{clear:both}.content{width:calc(99.9% * 2/3 - 10px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(3n){margin-right:0;float:right}.content:nth-child(3n+1){clear:both}.main-inner{padding:40px 35px}@media screen and (max-width:1100px){.content{width:calc(99.9% * 2/4 - 15px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(4n){margin-right:0;float:right}.content:nth-child(4n+1){clear:both}.main-inner{padding:35px 20px}}@media screen and (max-width:900px){.content{width:calc(99.9% * 7/12 - 12.5px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(12n){margin-right:0;float:right}.content:nth-child(12n+1){clear:both}.main-inner{padding:30px 20px}}@media screen and (max-width:500px){.content{width:calc(99.9% * 4/4 - 0px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(4n){margin-right:0;float:right}.content:nth-child(4n+1){clear:both}.main-inner{padding:25px 20px}}@media screen and (min-width:40em){.floatLeft{float:left}}@media screen and (min-width:40em){.floatCenter{margin-left:auto;margin-right:auto}}@media screen and (min-width:40em){.floatRight{float:right}}@media screen and (min-width:40em){body,html{margin:0;width:100%;max-width:none}}html{box-sizing:border-box;font-size:16px;font-size:100%;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#222;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}@media screen and (min-width:40em){html{font-size:18px;font-size:1.125rem}}*,:after,:before{box-sizing:inherit}body{margin:0}footer{display:block}body>footer{margin:0 auto;width:80%}header,main,section{display:block}a{background:transparent;color:#222;text-decoration:none;-webkit-transition:all .3s;transition:all .3s}a:active,a:hover{outline:0}a:active,a:hover{color:#222}article{display:block;margin:0 auto;width:80%}@media screen and (min-width:40em){article{max-width:945px;max-width:52.5rem}}audio{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}canvas{display:inline-block;vertical-align:baseline}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace}code{padding:26px;padding:1.625rem;display:block}@media screen and (min-width:40em){code{padding:31px;padding:1.722222222222222rem}}details,figcaption,summary{display:block}figcaption{line-height:26px;line-height:1.625rem;color:#222;font-size:.8125rem;font-style:italic;margin-bottom:0;text-align:center}@media screen and (min-width:40em){figcaption{line-height:31px;line-height:1.722222222222222rem;margin-bottom:0}}figure{display:block}@media screen and (min-width:40em){figure.floatLeft,figure.floatRight{max-width:315px;max-width:17.5rem;padding:0 31px;padding:0 1.722222222222222rem}}@media screen and (min-width:40em){figure.floatLeft blockquote,figure.floatRight blockquote{padding:0;text-align:left}}@media screen and (min-width:40em){figure.floatLeft blockquote p,figure.floatRight blockquote p{font-size:19.2px;font-size:1.2rem;line-height:31px;line-height:1.722222222222222rem}}h1{font-size:40px;font-size:2.5rem;line-height:52px;line-height:3.25rem;margin-top:104px;margin-top:6.5rem;margin-bottom:26px;margin-bottom:1.625rem}h2{font-size:27px;font-size:1.6875rem;line-height:39px;line-height:2.4375rem;margin-top:65px;margin-top:4.0625rem;margin-bottom:13px;margin-bottom:.8125rem}h3{font-size:22px;font-size:1.375rem;margin-top:52px;margin-top:3.25rem}h3,h4{line-height:26px;line-height:1.625rem;margin-bottom:13px;margin-bottom:.8125rem}h4{font-size:19.2px;font-size:1.2rem;margin-top:39px;margin-top:2.4375rem}h5,h6{font-size:16px;font-size:1rem;line-height:26px;line-height:1.625rem;margin-top:65px;margin-top:4.0625rem;margin-bottom:13px;margin-bottom:.8125rem}@media screen and (min-width:40em){h1{font-size:40px;font-size:2.5rem;line-height:62px;line-height:3.444444444444445rem;margin-top:124px;margin-top:6.888888888888889rem;margin-bottom:31px;margin-bottom:1.722222222222222rem}h2{font-size:27px;font-size:1.6875rem;line-height:46.5px;line-height:2.583333333333334rem;margin-top:77.5px;margin-top:4.305555555555556rem;margin-bottom:15.5px;margin-bottom:.861111111111111rem}h3{font-size:22px;font-size:1.375rem;margin-top:62px;margin-top:3.444444444444445rem}h3,h4{line-height:31px;line-height:1.722222222222222rem;margin-bottom:15.5px;margin-bottom:.861111111111111rem}h4{font-size:19.2px;font-size:1.2rem;margin-top:46.5px;margin-top:2.583333333333334rem}h5,h6{font-size:16px;font-size:1rem;line-height:31px;line-height:1.722222222222222rem;margin-top:77.5px;margin-top:4.305555555555556rem;margin-bottom:15.5px;margin-bottom:.861111111111111rem}}h1+h2{margin-top:26px;margin-top:1.625rem}@media screen and (min-width:40em){h1+h2{margin-top:31px;margin-top:1.722222222222222rem}}h2+h3,h3+h4,h4+h5{margin-top:13px;margin-top:.8125rem}@media screen and (min-width:40em){h2+h3,h3+h4,h4+h5{margin-top:15.5px;margin-top:.861111111111111rem}}h5+h6{margin-top:-13px;margin-top:-.8125rem}@media screen and (min-width:40em){h5+h6{margin-top:-15.5px;margin-top:-.861111111111111rem}}h6{font-style:italic;font-weight:400}hgroup,hr{display:block}hr{margin-top:52px;margin-bottom:52px;box-sizing:content-box;border:0;color:#222;height:26px;height:1.625rem;margin:3.25rem auto;background-size:100% 26px;background-size:100% 1.625rem;background-image:-webkit-linear-gradient(top,transparent 1px,transparent 11px,#222 0,#222 15px,transparent 0,transparent 26px);background-image:linear-gradient(180deg,transparent 1px,transparent 11px,#222 0,#222 15px,transparent 0,transparent 26px);width:100px}@media screen and (min-width:40em){hr{background-size:100% 31px;background-size:100% 1.722222222222222rem;background-image:-webkit-linear-gradient(top,transparent 1px,transparent 13.5px,#222 0,#222 17.5px,transparent 0,transparent 31px);background-image:linear-gradient(180deg,transparent 1px,transparent 13.5px,#222 0,#222 17.5px,transparent 0,transparent 31px);margin-top:62px;margin-top:3.444444444444445rem;margin-bottom:62px;margin-bottom:3.444444444444445rem;height:31px;height:1.722222222222222rem}}img{border:0;max-width:100%;display:block;margin:inherit auto}svg:not(:root){overflow:hidden}ol li,ul li{margin-bottom:0}nav{display:block}progress{display:inline-block;vertical-align:baseline}blockquote{font-style:italic;padding-left:1.4375rem}@media screen and (min-width:40em){blockquote{padding-left:2rem}}cite{display:block;font-style:normal}figure blockquote{padding:26px 0;padding:1.625rem 0}@media screen and (min-width:40em){figure blockquote{padding:62px 0 31px;padding:3.444444444444445rem 0 1.722222222222222rem;text-align:center}}figure blockquote p{font-size:27px;font-size:1.6875rem;line-height:39px;line-height:2.4375rem}@media screen and (min-width:40em){figure blockquote p{font-size:27px;font-size:1.6875rem;line-height:46.5px;line-height:2.583333333333334rem}}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}[hidden],template{display:none}abbr{letter-spacing:.1em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:600}dfn{font-style:italic}em,i{line-height:0;position:relative;vertical-align:baseline}mark{background:#ff0;color:#000}small{line-height:13px;line-height:.8125rem;font-size:70%}@media screen and (min-width:40em){small{line-height:15.5px;line-height:.861111111111111rem}}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}.attention-grabber{font-size:19.2px;font-size:1.2rem}.alignLeft{text-align:left}.alignCenter{text-align:center}.alignRight{text-align:right}.uppercase{letter-spacing:.1em;text-transform:uppercase}video{display:inline-block;vertical-align:baseline}.blog-post{margin:40px 0}.blog-post:last-child{margin-bottom:10px}.blog-post h2{margin-top:10px;line-height:30px;margin-bottom:20px}.blog-post h2 a:hover{border-bottom:1px solid}.blog-post p{font-size:16px;line-height:26px;margin-bottom:10px}.blog-post .blog-category,.blog-post time{font-size:14px;color:rgba(0,0,0,.8);font-weight:500;text-transform:uppercase}.blog-post .readmore{font-size:16px;color:rgba(0,0,0,.8)}.blog-post .readmore:hover{border-bottom:1px solid}.blog-single{max-width:945px;margin-left:auto;margin-right:auto}.blog-single code{font-size:18px}.blog-single h1{text-align:center;margin-top:30px;font-weight:500;text-align:left;font-size:40px;line-height:1.04}.blog-single .text{line-height:31px;margin-bottom:31px;font-size:21px}.blog-single blockquote{background:transparent;padding:10px 25px;margin:40px 0;border-left:.5px solid #000;position:relative;margin-right:-64px;text-align:left;font-size:18px}.blog-body{line-height:1.58}.blog-body a{text-decoration:underline}.blog-single .date-published,.blog-single .text :not(div),.blog-single h1{max-width:740px;margin-left:auto;margin-right:auto}.date-published{font-size:16px;padding:20px 16px;margin:0;line-height:normal;text-align:right}.blog-single .text img{max-width:100%;height:auto;margin:30px 0}.blog-single .footer{max-width:740px;margin-left:auto;margin-right:auto;line-height:31px;margin-bottom:31px}.gohome{position:fixed;left:20px;font-size:16px;padding:20px 16px;color:rgba(0,0,0,.8);font-weight:400;border-radius:3px}.gohome:hover{cursor:pointer;font-weight:500}@media (max-width:900px){.blog-single h1{margin-top:15px}.blog-single .footer,.blog-single .text{padding:0 15px;line-height:26px;margin-bottom:26px}.gohome{position:static;margin:20px auto 0;text-align:center;width:85px;display:block}}p>code,span>code{border-radius:3px;white-space:pre;white-space:pre-wrap;white-space:pre-line;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:-moz-pre-wrap;white-space:-hp-pre-wrap;word-wrap:break-word;background:#f8f8f8;display:inline;font-family:Inconsolata,monospace,serif;max-width:100%;overflow:auto;padding:.25em .5em}pre code{border-radius:3px;padding:.5em 1em;color:#333;background:transparent}.hljs,pre code{display:block;overflow-x:auto}.hljs{padding:.5em;background:#222;color:#fff}.hljs-comment,.hljs-quote{color:#777}.hljs-built_in,.hljs-builtin-name,.hljs-bullet,.hljs-deletion,.hljs-link,.hljs-literal,.hljs-meta,.hljs-number,.hljs-params,.hljs-regexp,.hljs-symbol,.hljs-tag,.hljs-template-variable,.hljs-variable{color:#ab875d}.hljs-attribute,.hljs-name,.hljs-section,.hljs-selector-class,.hljs-selector-id,.hljs-title,.hljs-type{color:#9b869b}.hljs-addition,.hljs-keyword,.hljs-selector-tag,.hljs-string{color:#8f9c6c}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.blog-nav{margin:20px 0 10px}.blog-nav ul{list-style:none;padding-left:0}.blog-nav ul li{margin:10px 0}.blog-nav ul li a{font-size:16px;line-height:26px;margin-bottom:26px;border-bottom:0;font-weight:400;color:rgba(0,0,0,.8)}.blog-nav ul li a.current,.blog-nav ul li a:hover{border-bottom:1px solid}.blog-social{margin-top:30px}.blog-social ul:after,.blog-social ul:before{content:" ";display:table}.blog-social ul:after{clear:both}.blog-social ul{list-style:none;padding:0;margin:10px 0;zoom:1}.blog-social ul>li{float:left;margin-right:5px;text-align:center;height:24px;width:24px;border-radius:3px;background:#f4f4f4}.blog-social ul>li:hover{background:#f4f4f4}.blog-social ul>li>a{border-bottom:0}.blog-social ul>li>a>i{color:rgba(0,0,0,.8);font-size:14px;line-height:24px}.blog-social ul>li:hover a>i{color:rgba(0,0,0,.6)}.sidebar{width:calc(99.9% * 1/3 - 20px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(3n){margin-right:0;float:right}.sidebar:nth-child(3n+1){clear:both}.sidebar .sidebar-inner{position:relative;padding:40px}.sidebar .sidebar-inner:after{background:#eee;background:-webkit-linear-gradient(top,#eee,#eee 48%,#fff);background:linear-gradient(180deg,#eee 0,#eee 48%,#fff);position:absolute;content:"";width:1px;height:540px;top:30px;right:-10px;bottom:0}.sidebar .sidebar-inner img{display:inline-block;margin-bottom:0;border-radius:50%;background-clip:padding-box}.sidebar .sidebar-inner h1,.sidebar .sidebar-inner h2{font-size:18px;font-weight:500;line-height:18px;margin:20px 0 10px}.sidebar .sidebar-inner p{color:rgba(0,0,0,.8);font-size:16px;line-height:26px;margin-bottom:26px}.sidebar .sidebar-inner p.copyright{color:rgba(0,0,0,.8);font-size:14px}@media (max-width:1100px){.sidebar .sidebar-inner{padding:35px 20px 0}.sidebar{width:calc(99.9% * 1/2 - 15px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(2n){margin-right:0;float:right}.sidebar:nth-child(2n+1){clear:both}}@media (max-width:900px){.sidebar{width:calc(99.9% * 5/12 - 17.5px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(12n){margin-right:0;float:right}.sidebar:nth-child(12n+1){clear:both}.sidebar .sidebar-inner{padding:30px 20px 0}}@media (max-width:500px){.sidebar{width:calc(99.9% * 1 - 0px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(undefinedn){margin-right:0;float:right}.sidebar:nth-child(undefinedn+1){clear:both}.sidebar .sidebar-inner{padding:25px 20px 0}.sidebar .sidebar-inner:after{display:none}}.blog-page{margin-bottom:40px}.blog-page h1{font-size:calc(20px + 16 * ((100vw - 420px) / 860));margin-top:0}@media screen and (min-width:1280px){.blog-page h1{font-size:36px}}@media screen and (max-width:420px){.blog-page h1{font-size:20px}}.blog-page p{font-size:16px;line-height:26px;margin-bottom:26px}@media (max-width:900px){.blog-single .footer,.blog-single .text{padding:0 15px}}</style></head><body><div id="react-mount"><div class="wrapper" data-reactroot="" data-reactid="1" data-react-checksum="1936111419"><div data-reactid="2"><div data-reactid="3"><div data-reactid="4"><a class="gohome" href="/" data-reactid="5">Back</a></div><div class="blog-single" data-reactid="6"><div class="text" data-reactid="7"><div class="date-published" data-reactid="8">12 Jan 2015</div><h1 data-reactid="9">React Tutorial Pt 1: A Comprehensive Guide to Building Apps with React.js</h1><div class="blog-body" data-reactid="10"><hide-from-preview>
+<hr>
+<p>Table of Contents:</p>
+<p><strong><a href="http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/">Pt I: A Comprehensive Guide to Building Apps with
+React.js.</a></strong></p>
+<p><a href="http://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app/">Pt 1.5: Utilizing Webpack and Babel to build a React.js
+App</a></p>
+<p><a href="http://tylermcginnis.com/reactjs-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/">Pt II: Building React.js Apps with Gulp, and
+Browserify.</a></p>
+<p><a href="http://tylermcginnis.com/reactjs-tutorial-pt-iii-architecting-react-js-apps-with-flux/">Pt III: Architecting React.js Apps with
+Flux.</a></p>
+<p><s>Pt IV: Add Routing to your React App with React Router. (Coming Soon)</s>**</p>
+<p><s>Pt V: Add Data Persistence to your React App with Firebase. (Coming Soon)</s>**</p>
+<p><s>Pt VI:Combining React.js, Flux, React Router, Firebase, Gulp, and Browserify. (Coming
+Soon)</s>*</p>
+<p>**<strong>Check out my <a href="http://reactjsprogram.com/">React.js Program</a>. It’s the successor to this blog series.</strong></p>
+<hr>
+</hide-from-preview>
+<p>By now you’ve probably heard about facebook’s React. You’ve probably even heard
+really good things. There has never been a better time to take the leap and
+start learning React. The difficulty starting out with React isn’t React itself.
+It’s important to remember React is “just the V in MVC” or “just the view
+layer”. Comparing React to Angular or React to Ember is unfair because React
+isn’t trying to be a full fledged framework. It’s just trying to be the view
+layer, which it’s really good at. This brings up issues for developers who are
+trying to learn React. React isn’t difficult to learn; putting all of the pieces
+together to build a full web application in React is.</p>
+<p>As you’ve started to learn React you’ve probably ran into this problem. You read
+facebook’s documentation, read a few tutorials, maybe even watched some Egghead
+videos. You started feeling pretty comfortable with React. Then you realized “I
+feel comfortable with React, but I still don’t think I can actually build
+anything meaningful with it”. I think that’s a thought that everyone learning
+React has. This goes back to the point of React. If you just learned the “V” in
+MVC, you would still feel pretty worthless. This React.js tutorial series is
+going to focus on addressing that concern. We’re going to first start off
+learning about the fundamentals of React. You’ll get comfortable with React
+itself from props to state to JSX and everything in between. After learning
+about the fundamentals of React we’re going to jump into all of the other
+components (pun slightly intended) that are needed to build a full web
+application using React.js. We’ll cover how to use Gulpto set up a nice build
+process for converting React’s HTML like syntax called JSX to JavaScript. We’ll
+talk about using Browserify to tie all of our components together. We’ll then
+dive into the Flux architecture and see how Flux can help us structure and
+architect our React application in an efficient manner. Next we’ll talk about
+persisting our data with Firebase and using React Router for, you guessed it,
+introducing routing into our app. After that, we’ll put it all together and
+build a “<a href="http://tylermcginnis.github.io/react-github-notetaker">Github Note
+Taker</a>” app, an app that
+allows you to save notes and see a snapshot of a developers Github account
+(potentially useful for tech interviews where you want to take notes on a
+particular candidate). I realize this is a lot, but when I first started
+learning React I was frustrated with the lack of tutorials focused on putting
+all the pieces of React together. This tutorial series hopes to fill that gap.</p>
+<h4><strong>React.js Fundamentals:</strong></h4>
+<p>Components are the building blocks of React. If you’re coming from an Angular
+background, components are very similar to Directives. If you’re coming from a
+different background, they’re essentially widgets or modules. You can think of a
+component as a collection of HTML, CSS, JS, and some internal data specific to
+that component. I like to think of React components as the Kolaches of the web.
+They have everything you need, wrapped in a delicious composable bundle. These
+components are defined either in pure JavaScript or they can be defined in what
+the React team calls “JSX”. If you decide to use JSX (which you most likely
+will, it’s pretty standard — and it’s what we’ll use for this tutorial), you’ll
+need some compile stage to convert your JSX to JavaScript, we’ll get to this
+later.</p>
+<p>What makes React so convenient for building user interfaces is that data is
+either received from a component’s parent component, or it’s contained in the
+component itself. Before we jump into code, let’s make sure we have a high level
+understanding of components.</p>
+<p>Above we have a picture of my Twitter profile. If we were going to re-create
+this page in React, we would break different sections up into different
+components (highlighted). Notice that components can have nested components
+inside of them. We might name the left component (pink) the “UserInfo”
+component. Inside the UserInfo component we have another component (orange),
+that we could call the “UserImages” component. The way this parent/child
+relationship works is our UserInfo component, or the parent component, is where
+the ‘state’ of the data for both itself and the UserImage component (child
+component) lives. If we wanted to use any part of the parent component’s data in
+the child component, which we do, we would pass that data to the child component
+as an attribute. In this example, we pass the UserImage component all of the
+images that the user has (which currently live in the UserInfo component). We’ll
+get more into the details of the code in a bit, but I want you to understand the
+bigger picture of what’s happening here. This parent/child hierarchy makes
+managing our data relatively simple because we know exactly where our data lives
+and we shouldn’t manipulate that data anywhere else.</p>
+<p>The topics below are what I believe to be the fundamental aspects of React. If
+you understand all of them and their purposes, you’ll be at a very good spot
+after reading this tutorial.</p>
+<p>JSX — Allows us to write HTML like syntax which gets transformed to lightweight
+JavaScript objects.</p>
+<p>Virtual DOM — A JavaScript representation of the actual
+DOM.</p>
+<p>React.createClass — The way in which you create a new component.</p>
+<p>render (method) — What we would like our HTML Template to look like.</p>
+<p>ReactDOM.render — Renders a React component to a DOM node.</p>
+<p>state — The internal data store (object) of a component.</p>
+<p>getInitialState — The way in which you set the initial state of a component.</p>
+<p>setState — A helper method for altering the state of a component.</p>
+<p>props — The data which is passed to the child component from the parent component.</p>
+<p>propTypes — Allows you to control the presence, or types of certain props passed to the child component.</p>
+<p>getDefaultProps — Allows you to set default props for your component.</p>
+<p>Component LifeCycle</p>
+<ul>
+<li>componentWillMount — Fired before the component will mount</li>
+<li>componentDidMount — Fired after the component mounted</li>
+<li>componentWillReceiveProps — Fired whenever there is a change to props</li>
+<li>componentWillUnmount — Fired before the component will unmount</li>
+</ul>
+<p>Events</p>
+<ul>
+<li>onClick</li>
+<li>onSubmit</li>
+<li>onChange</li>
+</ul>
+<p>I know it seems like a lot, but you’ll soon see how each piece is fundamental in
+building robust applications with React (and I also wasn’t kidding when I said I
+wanted this to be a comprehensive guide).</p>
+<p>At this point you should understand, on a very high level, how React works. Now,
+let’s jump into some code.</p>
+<h4>Creating your First Component (JSX, Virtual DOM, render, ReactDOM.render)</h4>
+<p>First, let’s go ahead and create our very first HelloWorld component so you can
+visualize how we use <strong>createClass</strong> to create a component. <strong>createClass</strong>
+takes in an object. <strong>This object is what <strong><strong>will</strong></strong> specify the different
+properties (render, getInitialState, propTypes) of the component.</strong></p>
+<p><a href="https://jsfiddle.net/tylermcginnis/d5hm5cjL/">Hello World Component Fiddle</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> HelloWorld = React.createClass({
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        Hello World!
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HelloWorld</span> /&gt;</span>, document.getElementById('app'));
+</span></code></pre>
+<p>Notice that the only method on the object we’re passing to createClass is the
+<strong>render</strong> method. Every component is required to have a render method. The
+reason for that is render is essentially the template for our component. So in
+this example the text that will show on the screen where this component is
+rendered is <strong>Hello World!</strong> A few more things about the code above. We’ve saved
+the result of calling our React.createClass constructor into a variable called
+HelloWorld. We do this because later on we’ll need to tell React to which
+element our component should be rendered. This is where ReactDOM.render comes
+into play. ReactDOM.render takes in two arguments. The first argument is the
+component you want to render, the second argument is the DOM node where you want
+to render the component. <em>(Notice we’re using ReactDOM.render and not
+React.render. This was a change made in React .14 to make React more modular. It
+makes sense when you think that React can render to more things than just a DOM
+element).</em> In the example above we’re telling React to take our <strong>HelloWorld</strong>
+component and render it to the element with an ID of app. Because of the
+parent/child child relations of React we talked about earlier, you usually only
+have to use ReactDOM.render once in your application because by rendering the
+most parent component, all child components will be rendered as well. If you
+want your whole app to be React, you would render the component to
+document.body.</p>
+<p>Now at this point you might feel a little weird throwing “HTML” into your
+JavaScript. Since you started learning web development, you’ve been told that
+you should keep your logic out of the view, AKA keep your JavaScript uncoupled
+from your HTML. This paradigm is strong, but it does have some weaknesses. I
+don’t want to make this tutorial longer trying to convince you that this idea is
+a step in the right direction, so if this idea still bothers you you can check
+out <a href="http://www.slideshare.net/floydophone/react-preso-v2">this link</a>. As you
+learn more about React, this uneasiness should quickly subside. The “HTML” that
+you’re writing in the render method isn’t actually HTML but it’s what React is
+calling “JSX”. JSX simply allows us to write HTML like syntax which gets
+transformed to lightweight JavaScript objects. React is then able to take these
+JavaScript objects and from them form a “virtual DOM” or a JavaScript
+representation of the actual DOM. This creates a win/win situation where you get
+the accessibility of templates with the power of JavaScript.</p>
+<p>Looking at the example below, this is what your JSX is transformed to once React
+runs its transformation process.</p>
+<p><a href="http://jsfiddle.net/tylermcginnis/y1qvspm1/">Hello World Component in JS</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> HelloWorld = React.createClass({
+  <span class="hljs-attr">displayName</span>: <span class="hljs-string">"HelloMessage"</span>,
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> React.createElement(<span class="hljs-string">"div"</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">"Hello World"</span>);
+  }
+});
+</code></pre>
+<p>Now, you can forgo the JSX -&gt; JS transform phase and write your React components
+like the code above, but as you can imagine, that would be rather tricky. I’m
+unaware of anyone who is not using JSX.</p>
+<p>Up until this point we haven’t really emphasized the importance of this new
+virtual DOM paradigm we’re jumping into. The reason the React team went with
+this approach is because, since the virtual DOM is a JavaScript representation
+of the actual DOM, React can keep track of the difference between the current
+virtual DOM(computed after some data changes), with the previous virtual DOM
+(computed befores some data changes). <a href="https://www.youtube.com/watch?v=-DX3vJiqxm4">React then isolates the changes between
+the old and new virtual DOM and then only updates the real DOM with the
+necessary
+changes</a><a href="https://www.youtube.com/watch?v=-DX3vJiqxm4">.</a>
+In more layman’s terms, because manipulating the actual DOM is slow, React is
+able to minimize manipulations to the actual DOM by keeping track of a virtual
+DOM and only updating the real DOM when necessary and with only the necessary
+changes. (<a href="https://www.youtube.com/watch?v=-DX3vJiqxm4">More info here</a>).
+Typically UI’s have lots of state which makes managing state difficult. By
+re-rendering the virtual DOM every time any state change occurs, React makes it
+easier to think about what state your application is in.</p>
+<p>The process looks something like this,</p>
+<p><strong>Signal to notify our app some data has changed→ Re-render virtual DOM -&gt; Diff
+previous virtual <strong><strong>DOM</strong></strong> with new virtual DOM -&gt; Only update real DOM with
+necessary changes.</strong></p>
+<p>Because there’s this transformation process from JSX to JS, you need to set up
+some sort of transformation phase as you’re developing. In part 2 of this series
+I’ll introduce using Gulp withReact and how to have your Gulp process include
+this JSX to JS transformation and more. For now, we’ll just stick with JSFiddle.
+If you’re interested in getting started without Gulp, check out the getting
+start guide <a href="http://facebook.github.io/react/docs/getting-started.html">here</a>.</p>
+<p>Let’s take a look back at our “Most Important Parts of React” checklist and see
+where we’re at now.</p>
+<p><strong>JSX — Allows us to write HTML like syntax which gets transformed to lightweight
+JavaScript objects.</strong></p>
+<p><strong>Virtual DOM — A JavaScript representation of the actual
+DOM.</strong></p>
+<p><strong>React.createClass — The way in which you create a new component.</strong></p>
+<p><strong>render (method) — What we would like our HTML Template to look like.</strong></p>
+<p><strong>ReactDOM.render — Renders a React component to a DOM node.</strong></p>
+<p>state — The internal data store (object) of a component.</p>
+<p>getInitialState — The way in which you set the initial state of a component.</p>
+<p>setState — A helper method for altering the state of a component.</p>
+<p>props — The data which is passed to the child component from the parent component.</p>
+<p>propTypes — Allows you to control the presence, or types of certain props passed to the child component.</p>
+<p>getDefaultProps — Allows you to set default props for your component.</p>
+<p>Component LifeCycle</p>
+<ul>
+<li>componentWillMount — Fired before the component will mount</li>
+<li>componentDidMount — Fired after the component mounted</li>
+<li>componentWillReceiveProps — Fired whenever there is a change to props</li>
+<li>componentWillUnmount — Fired before the component will unmount</li>
+</ul>
+<p>Events</p>
+<ul>
+<li>onClick</li>
+<li>onSubmit</li>
+<li>onChange</li>
+</ul>
+<p>We’re making good pace. Everything in bold is what we’ve already covered and you
+should at least be able to explain how those certain components fit into the
+React ecosystem.</p>
+<p><strong>Adding State to your Component (state)</strong></p>
+<p>Next on the list is “state”. Earlier we talked about how managing user
+interfaces is difficult because they typically have lots of different states.
+This area is where React really starts to shine. Each component has the ability
+to manage its own state and pass its state down to child components if needed.
+Going back to the Twitter example from earlier, the UserInfo component
+(highlighted in pink above) is responsible for managing the state (or data) of
+the users information. If another component also needed this state/data but that
+state wasn’t a direct child of the UserInfo component, then you would create
+another component that would be the direct parent of the UserInfo and the other
+component (or both components which required that state), then you would pass
+the state down as props into the child components. In other words, if you have a
+multi component hierarchy, a common parent component should manage the state and
+pass it down to its children components via props.</p>
+<p>Let’s take a look at an example component using it’s own internal state.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/du72b5L2/">Hello {name} With State</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> HelloUser = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">username</span>: <span class="hljs-string">'@tylermcginnis33'</span>
+    }
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        Hello {this.state.username}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+</code></pre>
+<p>We’ve introduced some new syntax with this example. The first one you’ll notice
+is the getInitialState method. From the definition above, the getInitialState
+method is “The way in which you set the state of a component”. In other terms,
+getInitialState returns an object which contains the state or data for our
+<a href="http://component.In">component.In</a> the code above we’re telling our component that we want it to keep
+track of a username. This username can now be used inside our component by
+<strong>{this.state.username}</strong>, which is exactly what we do in our render method.</p>
+<p>The last thing to talk about with state is that our component needs the ability
+to modify its own internal state. We do this with a method called <strong>setState</strong>.
+Remember earlier when we talked about the re-rendering of the virtual dom
+whenever the data changes?</p>
+<p><strong>Signal to notify our app some data has changed→ Re-render virtual DOM -&gt; Diff
+previous virtual DOM with new virtual DOM -&gt; Only update real DOM with necessary
+changes.</strong></p>
+<p>That “signal to notify our app some data has changed” is actually just setState.
+Whenever setState is called, the virtual DOM re-renders, the diff algorithm
+runs, and the real DOM is updated with the necessary changes.</p>
+<p>As a sidenote, when we introduce setState in the code below, we’re also going to
+introduce a few events that are on our list. Two birds, one stone.</p>
+<p>So in the next code sample, we’re going to now have an input box that whenever
+someone types into it, it will automatically update our state and change the
+username.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/f27qby3L/">Hello {name} with Ability to Change State
+Fiddle</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> HelloUser = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">username</span>: <span class="hljs-string">'@tylermcginnis33'</span>
+    }
+  },
+  <span class="hljs-attr">handleChange</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">username</span>: e.target.value
+    });
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        Hello {this.state.username} <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        Change Name: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{this.state.username}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.handleChange}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    )
+  }
+});
+</span></code></pre>
+<p>Note we’ve introduced a few more things. The first thing is the <strong>handleChange</strong>
+method. This method is going to get called every time a user types in the input
+box. When handleChange is called, it’s going to call setState to re-define our
+username withwhatever was typed into the input box (e.target.value). Remember,
+whenever setState is called, React creates a new virtual DOM, does the diff,
+then updates the real DOM.</p>
+<p>Now let’s look at our render method. We’ve added a new line that contains an
+input field. The type of the input field is obviously going to be “text”. The
+value is going to be the value of our username which was originally defined in
+our getInitialState method and will be updated in the handleChange method.
+Notice there is a new attribute you’ve probably never seen before, <strong>onChange</strong>.
+onChange is a React thing and it will call whatever method you specify every
+time the value in the input box changes, in this case the method we specified
+was handleChange.</p>
+<p>The process for the code above would go something like this.</p>
+<p>A user types into the input box → handleChange is invoked → the state of our
+component is set to a new value → React re-renders the virtual DOM → React Diffs
+the change → Real DOM is updated.</p>
+<p>Later on when we cover props, we’ll see some more advanced use cases of handling
+state.</p>
+<p>We’re getting there! If you can’t explain the items in bold below, go re-read
+that section. *and one tip on REALLY learning React. Don’t let passively reading
+this give you a false sense of security that you actually know what’s going on
+and can re-create what we’re doing. Head over to JSfiddle and try to recreate
+(or create your own) components without looking at what I’ve done. It’s the only
+way you’ll truly start learning how to build with React. This goes for this
+tutorial and the following to come.</p>
+<p><strong>JSX — Allows us to write HTML like syntax which gets transformed to lightweight
+JavaScript objects.</strong></p>
+<p><strong>Virtual DOM — A JavaScript representation of the actual
+DOM.</strong></p>
+<p><strong>React.createClass — The way in which you create a new component.</strong></p>
+<p><strong>render (method) — What we would like our HTML Template to look like.</strong></p>
+<p><strong>ReactDOM.render — Renders a React component to a DOM node.</strong></p>
+<p><strong>state — The internal data store (object) of a component.</strong></p>
+<p><strong>getInitialState — The way in which you set the initial state of a component.</strong></p>
+<p><strong>setState — A helper method for altering the state of a component.</strong></p>
+<p>props — The data which is passed to the child component from the parent component.</p>
+<p>propTypes — Allows you to control the presence, or types of certain props passed to the child component.</p>
+<p>getDefaultProps — Allows you to set default props for your component.</p>
+<p>Component LifeCycle</p>
+<ul>
+<li>componentWillMount — Fired before the component will mount</li>
+<li>componentDidMount — Fired after the component mounted</li>
+<li>componentWillReceiveProps — Fired whenever there is a change to props</li>
+<li>componentWillUnmount — Fired before the component will unmount</li>
+</ul>
+<p>Events</p>
+<ul>
+<li>onClick</li>
+<li>onSubmit</li>
+<li>onChange</li>
+</ul>
+<p><strong>Receiving State from Parent Component (props, propTypes, getDefaultProps)</strong></p>
+<p>We’ve talked about props a few times already since it’s hard to really do much
+without them. By our definition above, props is the data which is passed to the
+child component from the parent component. This allows for our React
+architecture to stay pretty straight forward. Handle state in the highest most
+parent component which needs to use the specific data, and if you have a child
+component that also needs that data, pass that data down as props.</p>
+<p>Here’s a very basic example of using props.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/jsd0qa3u/">Very Basic Props Example</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> HelloUser = React.createClass({
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> Hello, {this.props.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HelloUser</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Tyler"</span>/&gt;</span>, document.getElementById('app'));
+</span></code></pre>
+<p>Notice on line 9 we have an attribute called name with a value of “Tyler”. Now
+in our component, we can use <strong>{<a href="http://this.props.name">this.props.name</a>}</strong> to get “Tyler”.</p>
+<p>Let’s look at a more advanced example. We’re going to have two components now.
+One parent, one child. The parent is going to keep track of the state and pass a
+part of that state down to the child as props. Let’s first take a look at that
+parent component.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/xbq2dxut/">Passing a list to a Child
+Component</a></p>
+<p>Parent Component:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> FriendsContainer = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'Tyler McGinnis'</span>,
+      <span class="hljs-attr">friends</span>: [<span class="hljs-string">'Jake Lingwall'</span>, <span class="hljs-string">'Murphy Randall'</span>, <span class="hljs-string">'Merrick Christensen'</span>]
+    }
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span> Name: {this.state.name} <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ShowList</span> <span class="hljs-attr">names</span>=<span class="hljs-string">{this.state.friends}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    )
+  }
+});
+</span></code></pre>
+<p>There really isn’t much going on in this component that we haven’t seen before.
+We have an initial state and we pass part of that initial state to another
+component. The majority of the new code will come from this child component so
+let’s take a closer look at that.</p>
+<p>Child Component:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> ShowList = React.createClass({
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> listItems = <span class="hljs-keyword">this</span>.props.names.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">friend</span>)</span>{
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> {friend} <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>;
+    });
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span> Friends <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          {listItems}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+</code></pre>
+<p>Remember that the code that gets returned from our render method is a
+representation of what the real DOM should look like. If you’re not familiar
+with <strong>Array.prototype.map</strong>, this code might look a little wonky. All map does
+is it creates a new array, calls our callback function on each item in the
+array, and fills the new array with the result of calling the callback function
+on each item. For example,</p>
+<p><a href="http://jsfiddle.net/tylermcginnis/xgwpzv80/">Array.prototype.map</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> friends = [<span class="hljs-string">'Jake Lingwall'</span>, <span class="hljs-string">'Murphy Randall'</span>, <span class="hljs-string">'Merrick Christensen'</span>];
+<span class="hljs-keyword">var</span> listItems = friends.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">friend</span>)</span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;li&gt; "</span> + friend + <span class="hljs-string">"&lt;/li&gt;"</span>;
+});
+
+<span class="hljs-built_in">console</span>.log(listItems); <span class="hljs-comment">// ["&lt;li&gt; Jake Lingwall&lt;/li&gt;", "&lt;li&gt; Murphy Randall&lt;/li&gt;", "&lt;li&gt; Merrick Christensen&lt;/li&gt;"];</span>
+</code></pre>
+<p>The console.log above returns <code>[&quot;&lt;li&gt; Jake Lingwall&lt;/li&gt;&quot;, &quot;&lt;li&gt; Murphy Randall&lt;/li&gt;&quot;, &quot;&lt;li&gt; Merrick Christensen&lt;/li&gt;&quot;]</code>.</p>
+<p>Notice all that happened was we
+made a new array and added <code>&lt;li&gt; &lt;/li&gt;</code> to each item in the original array.</p>
+<p>What’s great about map is it fits perfectly into React (and it’s built into
+JavaScript). So in our child component above, we’re mapping over names, wrapping
+each name in a pair of <code>&lt;li&gt;</code> tags, and saving that to our listItems variable.
+Then, our render method returns an unordered list with all of our friends.</p>
+<p>Let’s look at one more example before we stop talking about props. It’s
+important to understand that wherever the data lives, is the exact place you
+want to manipulate that data. This keeps it simple to reason about your data.
+All getter/setter method for a certain piece of data will always be in the same
+component where that data was defined. If you needed to manipulate some piece of
+data outside where the data lives, you’d pass the getter/setter method into that
+component as props. Let’s take a look at an example like that.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/6rhdpt5c/">Passing a List to a Child Component with a Setter
+Method</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> FriendsContainer = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'Tyler McGinnis'</span>,
+      <span class="hljs-attr">friends</span>: [
+        <span class="hljs-string">'Jake Lingwall'</span>,
+        <span class="hljs-string">'Murphy Randall'</span>,
+        <span class="hljs-string">'Merrick Christensen'</span>
+      ],
+    }
+  },
+  <span class="hljs-attr">addFriend</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">friend</span>)</span>{
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">friends</span>: <span class="hljs-keyword">this</span>.state.friends.concat([friend])
+    });
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      &lt;div&gt;
+        &lt;h3&gt; Name: {this.state.name} &lt;/h3&gt;
+        &lt;AddFriend addNew={this.addFriend} /&gt;
+        &lt;ShowList names={this.state.friends} /&gt;
+      &lt;/div&gt;
+    )
+  }
+});
+</code></pre>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> AddFriend = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">newFriend</span>: <span class="hljs-string">''</span>
+    }
+  },
+  <span class="hljs-attr">updateNewFriend</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">newFriend</span>: e.target.value
+    });
+  },
+  <span class="hljs-attr">handleAddNew</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.props.addNew(<span class="hljs-keyword">this</span>.state.newFriend);
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">newFriend</span>: <span class="hljs-string">''</span>
+    });
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+            <span class="hljs-attr">value</span>=<span class="hljs-string">{this.state.newFriend}</span>
+            <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.updateNewFriend}</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleAddNew}</span>&gt;</span> Add Friend <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    );
+  }
+});
+</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> ShowList = React.createClass({
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> listItems = <span class="hljs-keyword">this</span>.props.names.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">friend</span>)</span>{
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> {friend} <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>;
+    });
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span> Friends <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          {listItems}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+</code></pre>
+<p>You’ll notice the code above is mostly the same as the previous example, except
+now we have the ability to add a name to our friends list. Notice how I created
+a new AddFriend component that manages the new friend we’re going to add. The
+reason for this is because the parent component (FriendContainer) doesn’t care
+about the new friend you’re adding, it only cares about all of your friends as a
+whole (the friends array). However, because we’re sticking with the rule of only
+manipulate your data from the component that cares about it, we’ve passed the
+addFriend method down into our AddFriend component as a propand we call it with
+the new friend once the handleAddNew method is called.</p>
+<p>At this point I recommend you try to recreate this same functionality on your
+own using the code above as a guidance once you’ve been stuck for 3-4 minutes.</p>
+<p>Before we move on from props, I want to cover two more React features regarding
+props. They are <strong>propTypes</strong> and <strong>getDefaultProps.</strong> I won’t go into too much
+detail here because both are pretty straight forward.</p>
+<p><a href="http://facebook.github.io/react/docs/reusable-components.html">propTypes</a> allow
+you to control the presence, or types of certain props passed to the child
+component. With propTypes you can specify that certain props are required or
+that certain props be a specific type.</p>
+<p><strong>getDefaultProps</strong> allow you to specify a default (or a backup) value for
+certain props just in case those props are never passed into the component.</p>
+<p>I’ve modified our example from earlier to now, using propTypes, require that
+addFriend is a function and that it’s passed into the AddFriend component. I’ve
+also, using getDefaultProps, specified that if no array of friends is given to
+the ShowList component, it will default to an empty array.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/fg685mkg/">Passing a List to a Child Component with a Setter Method with Default Props and
+Type Checking</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> FriendsContainer = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'Tyler McGinnis'</span>,
+      <span class="hljs-attr">friends</span>: [<span class="hljs-string">'Jake Lingwall'</span>, <span class="hljs-string">'Murphy Randall'</span>, <span class="hljs-string">'Merrick Christensen'</span>],
+    }
+  },
+  <span class="hljs-attr">addFriend</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">friend</span>)</span>{
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">friends</span>: <span class="hljs-keyword">this</span>.state.friends.concat([friend])
+    });
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      &lt;div&gt;
+        &lt;h3&gt; Name: {this.state.name} &lt;/h3&gt;
+        &lt;AddFriend addNew={this.addFriend} /&gt;
+        &lt;ShowList names={this.state.friends} /&gt;
+      &lt;/div&gt;
+    )
+  }
+});
+</code></pre>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> AddFriend = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">newFriend</span>: <span class="hljs-string">''</span>
+    }
+  },
+  <span class="hljs-attr">propTypes</span>: {
+    <span class="hljs-attr">addNew</span>: React.PropTypes.func.isRequired
+  },
+  <span class="hljs-attr">updateNewFriend</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">newFriend</span>: e.target.value
+    });
+  },
+  <span class="hljs-attr">handleAddNew</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.props.addNew(<span class="hljs-keyword">this</span>.state.newFriend);
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">newFriend</span>: <span class="hljs-string">''</span>
+    });
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{this.state.newFriend}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.updateNewFriend}</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleAddNew}</span>&gt;</span> Add Friend <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    );
+  }
+});
+</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> ShowList = React.createClass({
+  <span class="hljs-attr">getDefaultProps</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">names</span>: []
+    }
+  },
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> listItems = <span class="hljs-keyword">this</span>.props.names.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">friend</span>)</span>{
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> {friend} <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>;
+    });
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span> Friends <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          {listItems}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+</code></pre>
+<p>Alright, we’re on the last stretch for this first tutorial. Let’s take a look at
+our guide and see what we have left.</p>
+<p><strong>React.createClass — The way in which you create a new component.</strong></p>
+<p><strong>render (method) — What we would like our HTML Template to look like.</strong></p>
+<p><strong>ReactDOM.render — Renders a React component to a DOM node.</strong></p>
+<p><strong>state — The internal data store (object) of a component.</strong></p>
+<p><strong>getInitialState — The way in which you set the initial state of a component.</strong></p>
+<p><strong>setState — A helper method for altering the state of a component.</strong></p>
+<p><strong>props — The data which is passed to the child component from the parent component.</strong></p>
+<p><strong>propTypes — Allows you to control the presence, or types of certain props passed to the child component.</strong></p>
+<p><strong>getDefaultProps — Allows you to set default props for your component.</strong></p>
+<p>Component LifeCycle</p>
+<ul>
+<li>componentWillMount — Fired before the component will mount</li>
+<li>componentDidMount — Fired after the component mounted</li>
+<li>componentWillReceiveProps — Fired whenever there is a change to props</li>
+<li>componentWillUnmount — Fired before the component will unmount</li>
+</ul>
+<p><strong>Events</strong></p>
+<ul>
+<li><strong>onClick</strong></li>
+<li><strong>onSubmit</strong></li>
+<li><strong>onChange</strong></li>
+</ul>
+<p>We’re so close!</p>
+<p><strong>Component LifeCycle</strong></p>
+<p>Each component you make will have its own lifecycle events that are useful for
+various things. For example, if we wanted to make an ajax request on the initial
+render and fetch some data, where would we do that? Or, if we wanted to run some
+logic whenever our props changed, how would we do that? The different lifecycle
+events are the answers to both of those. Let’s break them down.</p>
+<p><a href="https://jsfiddle.net/tylermcginnis/L3edLfeL/">Component Life Cycle</a></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> FriendsContainer = React.createClass({
+  <span class="hljs-attr">getInitialState</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">'In getInitialState'</span>);
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'Tyler McGinnis'</span>
+    }
+  },
+  <span class="hljs-comment">// Invoked once before first render</span>
+  componentWillMount: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      <span class="hljs-comment">// Calling setState here does not cause a re-render</span>
+      alert(<span class="hljs-string">'In Component Will Mount'</span>);
+  },
+  <span class="hljs-comment">// Invoked once after the first render</span>
+  componentDidMount: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      <span class="hljs-comment">// You now have access to this.getDOMNode()</span>
+      alert(<span class="hljs-string">'In Component Did Mount'</span>);
+  },
+  <span class="hljs-comment">// Invoked whenever there is a prop change</span>
+  <span class="hljs-comment">// Called BEFORE render</span>
+  componentWillReceiveProps: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nextProps</span>)</span>{
+      <span class="hljs-comment">// Not called for the initial render</span>
+      <span class="hljs-comment">// Previous props can be accessed by this.props</span>
+      <span class="hljs-comment">// Calling setState here does not trigger an additional re-render</span>
+      alert(<span class="hljs-string">'In Component Will Receive Props'</span>);
+  },
+  <span class="hljs-comment">// Called IMMEDIATELY before a component is unmounted</span>
+  componentWillUnmount: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{},
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        Hello, {this.state.name}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+});
+</code></pre>
+<p><strong>componentWillMount</strong>: Invoked once before the <em>initial</em> render. If you were to
+call setState here, no re-render would be invoked. An example of this would be
+if you’re using a service like firebase, you’d set up your reference to your
+firebase database here since it’s only invoked once on the initial render.</p>
+<p><strong>componentDidMount</strong> - Invoked once after the initial render. Because the
+component has already been invoked when this method is invoked, you have access
+to the virtual DOM if you need it. You do that by calling
+<strong>this.getDOMNode()</strong>. <em>Now it might seem like if you wanted to make AJAX
+requests you would do that in componentWillMount, but the devs at facebook
+actually recommend you do that in componentDidMount. So this is the lifecycle
+event where you’ll be making your AJAX requests to fetch some data.</em></p>
+<p><strong>componentWillReceiveProps</strong> - This life cycle is not called on the initial
+render, but is instead called whenever there is a change to props. Use this
+method as a way to react to a prop change before render() is called by updating
+the state with setState.</p>
+<p><strong>componentWillUnmount</strong> - This life cycle is invoked immediately before a
+component is unmounted from the DOM. This is where you can do necessary clean
+up. For example, going back to our firebase example this is the life cycle event
+where you would clean up your firebase reference you set in componentWillMount.</p>
+<p>There are a <a href="http://facebook.github.io/react/docs/component-specs.html">few
+more</a> life cycle
+methods, but the ones I’ve covered are the ones that I’ve seen which are the
+most useful.</p>
+<p>Well, if you stuck with me until this point, great job. I hope this tutorial was
+beneficial to you and you now feel at least mildly comfortable with React. As I
+mentioned before, this is just part 1 of a 6 part tutorial series. If you have
+any suggestions or if this helped you out, let me know in the comments.</p>
+</div></div><div class="footer" data-reactid="11"><a style="text-decoration:underline;" href="https://twitter.com/tylermcginnis33" data-reactid="12">Tyler McGinnis</a></div></div></div></div></div></div><script src="/bundle.js?t=1481771453756"></script></body></html>

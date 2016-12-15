@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0"/><style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,cite,code,details,figcaption,figure,footer,header,hgroup,main,nav,section,small,summary{display:block}article,article ol,article ul,blockquote,body,div,figure,footer,header,input,nav,section{box-sizing:border-box}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr{letter-spacing:.1em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:600}dfn{font-style:italic}mark{background:#ff0;color:#000}small{font-size:70%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}em,i{line-height:0;position:relative;vertical-align:baseline}img{border:0}svg:not(:root){overflow:hidden}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}img{max-width:100%;display:block;margin:inherit auto}.wrapper{max-width:1070px;margin-left:auto;margin-right:auto}.wrapper:after,.wrapper:before{content:"";display:table}.wrapper:after{clear:both}.content{width:calc(99.9% * 2/3 - 10px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(3n){margin-right:0;float:right}.content:nth-child(3n+1){clear:both}.main-inner{padding:40px 35px}@media screen and (max-width:1100px){.content{width:calc(99.9% * 2/4 - 15px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(4n){margin-right:0;float:right}.content:nth-child(4n+1){clear:both}.main-inner{padding:35px 20px}}@media screen and (max-width:900px){.content{width:calc(99.9% * 7/12 - 12.5px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(12n){margin-right:0;float:right}.content:nth-child(12n+1){clear:both}.main-inner{padding:30px 20px}}@media screen and (max-width:500px){.content{width:calc(99.9% * 4/4 - 0px)}.content:nth-child(1n){float:left;margin-right:30px;clear:none}.content:last-child{margin-right:0}.content:nth-child(4n){margin-right:0;float:right}.content:nth-child(4n+1){clear:both}.main-inner{padding:25px 20px}}@media screen and (min-width:40em){.floatLeft{float:left}}@media screen and (min-width:40em){.floatCenter{margin-left:auto;margin-right:auto}}@media screen and (min-width:40em){.floatRight{float:right}}@media screen and (min-width:40em){body,html{margin:0;width:100%;max-width:none}}html{box-sizing:border-box;font-size:16px;font-size:100%;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#222;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}@media screen and (min-width:40em){html{font-size:18px;font-size:1.125rem}}*,:after,:before{box-sizing:inherit}body{margin:0}footer{display:block}body>footer{margin:0 auto;width:80%}header,main,section{display:block}a{background:transparent;color:#222;text-decoration:none;-webkit-transition:all .3s;transition:all .3s}a:active,a:hover{outline:0}a:active,a:hover{color:#222}article{display:block;margin:0 auto;width:80%}@media screen and (min-width:40em){article{max-width:945px;max-width:52.5rem}}audio{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}canvas{display:inline-block;vertical-align:baseline}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace}code{padding:26px;padding:1.625rem;display:block}@media screen and (min-width:40em){code{padding:31px;padding:1.722222222222222rem}}details,figcaption,summary{display:block}figcaption{line-height:26px;line-height:1.625rem;color:#222;font-size:.8125rem;font-style:italic;margin-bottom:0;text-align:center}@media screen and (min-width:40em){figcaption{line-height:31px;line-height:1.722222222222222rem;margin-bottom:0}}figure{display:block}@media screen and (min-width:40em){figure.floatLeft,figure.floatRight{max-width:315px;max-width:17.5rem;padding:0 31px;padding:0 1.722222222222222rem}}@media screen and (min-width:40em){figure.floatLeft blockquote,figure.floatRight blockquote{padding:0;text-align:left}}@media screen and (min-width:40em){figure.floatLeft blockquote p,figure.floatRight blockquote p{font-size:19.2px;font-size:1.2rem;line-height:31px;line-height:1.722222222222222rem}}h1{font-size:40px;font-size:2.5rem;line-height:52px;line-height:3.25rem;margin-top:104px;margin-top:6.5rem;margin-bottom:26px;margin-bottom:1.625rem}h2{font-size:27px;font-size:1.6875rem;line-height:39px;line-height:2.4375rem;margin-top:65px;margin-top:4.0625rem;margin-bottom:13px;margin-bottom:.8125rem}h3{font-size:22px;font-size:1.375rem;margin-top:52px;margin-top:3.25rem}h3,h4{line-height:26px;line-height:1.625rem;margin-bottom:13px;margin-bottom:.8125rem}h4{font-size:19.2px;font-size:1.2rem;margin-top:39px;margin-top:2.4375rem}h5,h6{font-size:16px;font-size:1rem;line-height:26px;line-height:1.625rem;margin-top:65px;margin-top:4.0625rem;margin-bottom:13px;margin-bottom:.8125rem}@media screen and (min-width:40em){h1{font-size:40px;font-size:2.5rem;line-height:62px;line-height:3.444444444444445rem;margin-top:124px;margin-top:6.888888888888889rem;margin-bottom:31px;margin-bottom:1.722222222222222rem}h2{font-size:27px;font-size:1.6875rem;line-height:46.5px;line-height:2.583333333333334rem;margin-top:77.5px;margin-top:4.305555555555556rem;margin-bottom:15.5px;margin-bottom:.861111111111111rem}h3{font-size:22px;font-size:1.375rem;margin-top:62px;margin-top:3.444444444444445rem}h3,h4{line-height:31px;line-height:1.722222222222222rem;margin-bottom:15.5px;margin-bottom:.861111111111111rem}h4{font-size:19.2px;font-size:1.2rem;margin-top:46.5px;margin-top:2.583333333333334rem}h5,h6{font-size:16px;font-size:1rem;line-height:31px;line-height:1.722222222222222rem;margin-top:77.5px;margin-top:4.305555555555556rem;margin-bottom:15.5px;margin-bottom:.861111111111111rem}}h1+h2{margin-top:26px;margin-top:1.625rem}@media screen and (min-width:40em){h1+h2{margin-top:31px;margin-top:1.722222222222222rem}}h2+h3,h3+h4,h4+h5{margin-top:13px;margin-top:.8125rem}@media screen and (min-width:40em){h2+h3,h3+h4,h4+h5{margin-top:15.5px;margin-top:.861111111111111rem}}h5+h6{margin-top:-13px;margin-top:-.8125rem}@media screen and (min-width:40em){h5+h6{margin-top:-15.5px;margin-top:-.861111111111111rem}}h6{font-style:italic;font-weight:400}hgroup,hr{display:block}hr{margin-top:52px;margin-bottom:52px;box-sizing:content-box;border:0;color:#222;height:26px;height:1.625rem;margin:3.25rem auto;background-size:100% 26px;background-size:100% 1.625rem;background-image:-webkit-linear-gradient(top,transparent 1px,transparent 11px,#222 0,#222 15px,transparent 0,transparent 26px);background-image:linear-gradient(180deg,transparent 1px,transparent 11px,#222 0,#222 15px,transparent 0,transparent 26px);width:100px}@media screen and (min-width:40em){hr{background-size:100% 31px;background-size:100% 1.722222222222222rem;background-image:-webkit-linear-gradient(top,transparent 1px,transparent 13.5px,#222 0,#222 17.5px,transparent 0,transparent 31px);background-image:linear-gradient(180deg,transparent 1px,transparent 13.5px,#222 0,#222 17.5px,transparent 0,transparent 31px);margin-top:62px;margin-top:3.444444444444445rem;margin-bottom:62px;margin-bottom:3.444444444444445rem;height:31px;height:1.722222222222222rem}}img{border:0;max-width:100%;display:block;margin:inherit auto}svg:not(:root){overflow:hidden}ol li,ul li{margin-bottom:0}nav{display:block}progress{display:inline-block;vertical-align:baseline}blockquote{font-style:italic;padding-left:1.4375rem}@media screen and (min-width:40em){blockquote{padding-left:2rem}}cite{display:block;font-style:normal}figure blockquote{padding:26px 0;padding:1.625rem 0}@media screen and (min-width:40em){figure blockquote{padding:62px 0 31px;padding:3.444444444444445rem 0 1.722222222222222rem;text-align:center}}figure blockquote p{font-size:27px;font-size:1.6875rem;line-height:39px;line-height:2.4375rem}@media screen and (min-width:40em){figure blockquote p{font-size:27px;font-size:1.6875rem;line-height:46.5px;line-height:2.583333333333334rem}}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}[hidden],template{display:none}abbr{letter-spacing:.1em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:600}dfn{font-style:italic}em,i{line-height:0;position:relative;vertical-align:baseline}mark{background:#ff0;color:#000}small{line-height:13px;line-height:.8125rem;font-size:70%}@media screen and (min-width:40em){small{line-height:15.5px;line-height:.861111111111111rem}}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}.attention-grabber{font-size:19.2px;font-size:1.2rem}.alignLeft{text-align:left}.alignCenter{text-align:center}.alignRight{text-align:right}.uppercase{letter-spacing:.1em;text-transform:uppercase}video{display:inline-block;vertical-align:baseline}.blog-post{margin:40px 0}.blog-post:last-child{margin-bottom:10px}.blog-post h2{margin-top:10px;line-height:30px;margin-bottom:20px}.blog-post h2 a:hover{border-bottom:1px solid}.blog-post p{font-size:16px;line-height:26px;margin-bottom:10px}.blog-post .blog-category,.blog-post time{font-size:14px;color:rgba(0,0,0,.8);font-weight:500;text-transform:uppercase}.blog-post .readmore{font-size:16px;color:rgba(0,0,0,.8)}.blog-post .readmore:hover{border-bottom:1px solid}.blog-single{max-width:945px;margin-left:auto;margin-right:auto}.blog-single code{font-size:18px}.blog-single h1{text-align:center;margin-top:30px;font-weight:500;text-align:left;font-size:40px;line-height:1.04}.blog-single .text{line-height:31px;margin-bottom:31px;font-size:21px}.blog-single blockquote{background:transparent;padding:10px 25px;margin:40px 0;border-left:.5px solid #000;position:relative;margin-right:-64px;text-align:left;font-size:18px}.blog-body{line-height:1.58}.blog-body a{text-decoration:underline}.blog-single .date-published,.blog-single .text :not(div),.blog-single h1{max-width:740px;margin-left:auto;margin-right:auto}.date-published{font-size:16px;padding:20px 16px;margin:0;line-height:normal;text-align:right}.blog-single .text img{max-width:100%;height:auto;margin:30px 0}.blog-single .footer{max-width:740px;margin-left:auto;margin-right:auto;line-height:31px;margin-bottom:31px}.gohome{position:fixed;left:20px;font-size:16px;padding:20px 16px;color:rgba(0,0,0,.8);font-weight:400;border-radius:3px}.gohome:hover{cursor:pointer;font-weight:500}@media (max-width:900px){.blog-single h1{margin-top:15px}.blog-single .footer,.blog-single .text{padding:0 15px;line-height:26px;margin-bottom:26px}.gohome{position:static;margin:20px auto 0;text-align:center;width:85px;display:block}}p>code,span>code{border-radius:3px;white-space:pre;white-space:pre-wrap;white-space:pre-line;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:-moz-pre-wrap;white-space:-hp-pre-wrap;word-wrap:break-word;background:#f8f8f8;display:inline;font-family:Inconsolata,monospace,serif;max-width:100%;overflow:auto;padding:.25em .5em}pre code{border-radius:3px;padding:.5em 1em;color:#333;background:transparent}.hljs,pre code{display:block;overflow-x:auto}.hljs{padding:.5em;background:#222;color:#fff}.hljs-comment,.hljs-quote{color:#777}.hljs-built_in,.hljs-builtin-name,.hljs-bullet,.hljs-deletion,.hljs-link,.hljs-literal,.hljs-meta,.hljs-number,.hljs-params,.hljs-regexp,.hljs-symbol,.hljs-tag,.hljs-template-variable,.hljs-variable{color:#ab875d}.hljs-attribute,.hljs-name,.hljs-section,.hljs-selector-class,.hljs-selector-id,.hljs-title,.hljs-type{color:#9b869b}.hljs-addition,.hljs-keyword,.hljs-selector-tag,.hljs-string{color:#8f9c6c}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.blog-nav{margin:20px 0 10px}.blog-nav ul{list-style:none;padding-left:0}.blog-nav ul li{margin:10px 0}.blog-nav ul li a{font-size:16px;line-height:26px;margin-bottom:26px;border-bottom:0;font-weight:400;color:rgba(0,0,0,.8)}.blog-nav ul li a.current,.blog-nav ul li a:hover{border-bottom:1px solid}.blog-social{margin-top:30px}.blog-social ul:after,.blog-social ul:before{content:" ";display:table}.blog-social ul:after{clear:both}.blog-social ul{list-style:none;padding:0;margin:10px 0;zoom:1}.blog-social ul>li{float:left;margin-right:5px;text-align:center;height:24px;width:24px;border-radius:3px;background:#f4f4f4}.blog-social ul>li:hover{background:#f4f4f4}.blog-social ul>li>a{border-bottom:0}.blog-social ul>li>a>i{color:rgba(0,0,0,.8);font-size:14px;line-height:24px}.blog-social ul>li:hover a>i{color:rgba(0,0,0,.6)}.sidebar{width:calc(99.9% * 1/3 - 20px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(3n){margin-right:0;float:right}.sidebar:nth-child(3n+1){clear:both}.sidebar .sidebar-inner{position:relative;padding:40px}.sidebar .sidebar-inner:after{background:#eee;background:-webkit-linear-gradient(top,#eee,#eee 48%,#fff);background:linear-gradient(180deg,#eee 0,#eee 48%,#fff);position:absolute;content:"";width:1px;height:540px;top:30px;right:-10px;bottom:0}.sidebar .sidebar-inner img{display:inline-block;margin-bottom:0;border-radius:50%;background-clip:padding-box}.sidebar .sidebar-inner h1,.sidebar .sidebar-inner h2{font-size:18px;font-weight:500;line-height:18px;margin:20px 0 10px}.sidebar .sidebar-inner p{color:rgba(0,0,0,.8);font-size:16px;line-height:26px;margin-bottom:26px}.sidebar .sidebar-inner p.copyright{color:rgba(0,0,0,.8);font-size:14px}@media (max-width:1100px){.sidebar .sidebar-inner{padding:35px 20px 0}.sidebar{width:calc(99.9% * 1/2 - 15px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(2n){margin-right:0;float:right}.sidebar:nth-child(2n+1){clear:both}}@media (max-width:900px){.sidebar{width:calc(99.9% * 5/12 - 17.5px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(12n){margin-right:0;float:right}.sidebar:nth-child(12n+1){clear:both}.sidebar .sidebar-inner{padding:30px 20px 0}}@media (max-width:500px){.sidebar{width:calc(99.9% * 1 - 0px)}.sidebar:nth-child(1n){float:left;margin-right:30px;clear:none}.sidebar:last-child{margin-right:0}.sidebar:nth-child(undefinedn){margin-right:0;float:right}.sidebar:nth-child(undefinedn+1){clear:both}.sidebar .sidebar-inner{padding:25px 20px 0}.sidebar .sidebar-inner:after{display:none}}.blog-page{margin-bottom:40px}.blog-page h1{font-size:calc(20px + 16 * ((100vw - 420px) / 860));margin-top:0}@media screen and (min-width:1280px){.blog-page h1{font-size:36px}}@media screen and (max-width:420px){.blog-page h1{font-size:20px}}.blog-page p{font-size:16px;line-height:26px;margin-bottom:26px}@media (max-width:900px){.blog-single .footer,.blog-single .text{padding:0 15px}}</style></head><body><div id="react-mount"><div class="wrapper" data-reactroot="" data-reactid="1" data-react-checksum="-728485417"><div data-reactid="2"><div data-reactid="3"><div data-reactid="4"><a class="gohome" href="/" data-reactid="5">Back</a></div><div class="blog-single" data-reactid="6"><div class="text" data-reactid="7"><div class="date-published" data-reactid="8">4 May 2014</div><h1 data-reactid="9">AngularJS: Factory vs Service vs Provider</h1><div class="blog-body" data-reactid="10"><p>When you first get started with Angular, you’ll naturally find yourself flooding
+your controllers and scopes with unnecessary logic. It’s important to realize
+early on that your controller should be very thin; meaning, most of the business
+logic and persistent data in your application should be taken care of or stored
+in a service. I see a few questions a day on Stack Overflow regarding someone
+trying to have persistent data in his or her controller. That’s just not the
+purpose of a controller. For memory purposes, controllers are instantiated only
+when they are needed and discarded when they are not. Because of this, every
+time you switch a route or reload a page, Angular cleans up the current
+controller. Services however provide a means for keeping data around for the
+lifetime of an application while they also can be used across different
+controllers in a consistent manner.</p>
+<p>Angular provides us with three ways to create and register our own service.</p>
+<ol>
+<li>
+<p>Factory</p>
+</li>
+<li>
+<p>Service</p>
+</li>
+<li>
+<p>Provider</p>
+</li>
+</ol>
+<p><strong>TL;DR</strong></p>
+<ol>
+<li>When you’re using a <strong>Factory</strong> you create an object, add properties to it,
+then return that same object. When you pass this service into your controller,
+those properties on the object will now be available in that controller through
+your factory.</li>
+</ol>
+<pre><code class="language-javascript">app.controller(<span class="hljs-string">'myFactoryCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, myFactory</span>) </span>{
+  $scope.artist = myFactory.getArtist()
+})
+
+app.factory(<span class="hljs-string">'myFactory'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> service = {}
+
+  service.getArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> _artist
+  }
+
+  <span class="hljs-keyword">return</span> service;
+})
+</code></pre>
+<ol start="2">
+<li>When you’re using <strong>Service</strong>, it’s instantiated with the ‘new’ keyword.
+Because of that, you’ll add properties to ‘this’ and the service will return
+‘this’. When you pass the service into your controller, those properties on
+‘this’ will now be available on that controller through your service.</li>
+</ol>
+<pre><code class="language-javascript">app.controller(<span class="hljs-string">'myServiceCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, myService</span>) </span>{
+  $scope.artist = myService.getArtist();
+});
+
+app.service(<span class="hljs-string">'myService'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">this</span>.getArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> _artist;
+  }
+});
+</code></pre>
+<ol start="3">
+<li><strong>Providers</strong> are the only service you can pass into your .config() function.
+Use a provider when you want to provide module-wide configuration for your
+service object before making it available.</li>
+</ol>
+<pre><code class="language-javascript">app.controller(<span class="hljs-string">'myProviderCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, myProvider</span>) </span>{
+  $scope.artist = myProvider.getArtist();
+  $scope.data.thingFromConfig = myProvider.thingOnConfig;
+});
+
+app.provider(<span class="hljs-string">'myProvider'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>._artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">this</span>.thingFromConfig = <span class="hljs-string">''</span>;
+
+  <span class="hljs-comment">//Only the properties on the object returned from $get are available in the controller.</span>
+  <span class="hljs-keyword">this</span>.$get = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">getArtist</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> that._artist;
+      },
+      <span class="hljs-attr">thingonConfig</span>: that.thingFromConfig
+    }
+  }
+});
+
+app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">myProviderProvider</span>) </span>{
+  myProviderProvider.thingFromConfig = <span class="hljs-string">'This was set in config()'</span>;
+})
+
+</code></pre>
+<p><strong>NON TL;DR</strong></p>
+<p>In order to extensively show the difference between a Factory, Service, and
+Provider, we’re going to build the same service in three separate ways. The
+services are going to utilize the iTunes API as well as promises with $q.</p>
+<p><strong>1) Factory</strong></p>
+<p>Factories are the most popular way to create and configure a service. There’s
+really not much more than what the TL;DR said. You just create an object, add
+properties to it, then return that same object. Then when you pass the factory
+into your controller, those properties on the object will now be available in
+that controller through your factory. A more extensive example is below.</p>
+<p>First we create an object, then return that object like so.</p>
+<pre><code class="language-javascript">app.factory(<span class="hljs-string">'myFactory'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> service = {};
+  <span class="hljs-keyword">return</span> service;
+});
+</code></pre>
+<p>Now whatever properties we attach to ‘service’ will be available to us when we
+pass ‘myFactory’ into our controller.</p>
+<p>Now let’s add some ‘private’ variables to our callback function. These won’t be
+directly accessible from the controller, but we will eventually set up some
+getter/setter methods on ‘service’ to be able to alter these ‘private’ variables
+when needed.</p>
+<pre><code class="language-javascript">app.factory(<span class="hljs-string">'myFactory'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">var</span> service = {};
+  <span class="hljs-keyword">var</span> baseUrl = <span class="hljs-string">'https://itunes.apple.com/search?term='</span>;
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> _finalUrl = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">var</span> makeUrl = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _artist = _artist.split(<span class="hljs-string">' '</span>).join(<span class="hljs-string">'+'</span>);
+    _finalUrl = baseUrl + _artist + <span class="hljs-string">'&amp;callback=JSON_CALLBACK'</span>;
+    <span class="hljs-keyword">return</span> _finalUrl;
+  }
+
+  <span class="hljs-keyword">return</span> service;
+});
+</code></pre>
+<p>Here you’ll notice we’re not attaching those variables/function to ‘service’.
+We’re simply creating them in order to either use or modify them later.</p>
+<ul>
+<li><strong>baseUrl</strong> is the base URL that the iTunes API requires</li>
+<li><strong>_artist</strong> is the artist we wish to lookup</li>
+<li><strong>_finalUrl</strong> is the final and fully built URL to which we’ll make the call to
+iTunes</li>
+<li><strong>makeUrl</strong> is a function that will create and return our iTunes friendly URL.</li>
+</ul>
+<p>Now that our helper/private variables and function are in place, let’s add some
+properties to the ‘service’ object. Whatever we put on ‘service’ we’ll be able
+to directly use in whichever controller we pass ‘myFactory’ into.</p>
+<p>We are going to create setArtist and getArtist methods that simply return or set
+the artist. We are also going to create a method that will call the iTunes API
+with our created URL. This method is going to return a promise that will fulfill
+once the data has come back from the iTunes API. If you haven’t had much
+experience using promises in Angular, I highly recommend doing a deep dive on
+them.</p>
+<ul>
+<li><strong>setArtist</strong> accepts an artistand allows you to set the artist</li>
+<li><strong>getArtist</strong> returns the artist</li>
+<li><strong>callItunes</strong> first calls makeUrl() in order to build the URL we’ll use with
+our $http request. Then it sets up a promise object, makes an $http request with
+our final url, then because $http returns a promise, we are able to call
+.success or .error after our request. We then resolve our promise with the
+iTunes data, or we reject it with a message saying ‘There was an error’.</li>
+</ul>
+<pre><code class="language-javascript">app.factory(<span class="hljs-string">'myFactory'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">var</span> service = {};
+  <span class="hljs-keyword">var</span> baseUrl = <span class="hljs-string">'https://itunes.apple.com/search?term='</span>
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> _finalUrl = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">var</span> makeUrl = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _artist = _artist.split(<span class="hljs-string">' '</span>).join(<span class="hljs-string">'+'</span>);
+    _finalUrl = baseUrl + _artist + <span class="hljs-string">'&amp;callback=JSON_CALLBACK'</span>;
+    <span class="hljs-keyword">return</span> _finalUrl;
+  }
+
+  service.setArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">artist</span>) </span>{
+    _artist = artist;
+  }
+
+  service.getArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> _artist;
+  }
+
+  service.callItunes = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    makeUrl()
+    <span class="hljs-keyword">var</span> deferred = $q.defer();
+    $http({
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'JSONP'</span>,
+      <span class="hljs-attr">url</span>: _finalUrl
+    }).success(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+      deferred.resolve(data);
+    }).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      deferred.reject(<span class="hljs-string">'There was an error'</span>);
+    })
+
+    <span class="hljs-keyword">return</span> deferred.promise;
+  }
+
+  <span class="hljs-keyword">return</span> service;
+});
+</code></pre>
+<p>Now our factory is complete. We are now able to inject ‘myFactory’ into any
+controller and we’ll then be able to call our methods that we attached to our
+service object (setArtist, getArtist, and callItunes).</p>
+<pre><code class="language-javascript">app.controller(<span class="hljs-string">'myFactoryCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, myFactory</span>) </span>{
+  $scope.data = {};
+  $scope.updateArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    myFactory.setArtist($scope.data.artist);
+  }
+
+  $scope.submitArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    myFactory.callItunes()
+      .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        $scope.data.artistData = data;
+      }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        alert(data);
+      })
+  }
+})
+</code></pre>
+<p>In the controller above we’re injecting in the ‘myFactory’ service. We then set
+properties on our $scope object that are coming from data from ‘myFactory’. The
+only tricky code above is if you’ve never dealt with promises before. Because
+callItunes is returning a promise, we are able to use the .then() method and
+only set $scope.data.artistData once our promise is fulfilled with the iTunes
+data. You’ll notice our controller is very ‘thin’. All of our logic and
+persistent data is located in our service, not in our controller.</p>
+<hr>
+<p><a href="https://reactjsprogram.com"><img src="https://cdn-images-1.medium.com/max/800/1*0DGs4v3Xr1T8s_fEtfjh-w.png" alt=""></a></p>
+<hr>
+<p><strong>2) Service</strong></p>
+<p>Perhaps the biggest thing to know when dealing with creating a Service is that
+that it’s instantiated with the ‘new’ keyword. For you JavaScript gurus this
+should give you a big hint into the nature of the code. For those of you with a
+limited background in JavaScript or for those who aren’t too familiar with what
+the ‘new’ keyword actually does, let’s review some JavaScript fundamentals that
+will eventually help us in understanding the nature of a Service.</p>
+<p>To really see the changes that occur when you invoke a function with the ‘new’
+keyword, let’s create a function and invoke it with the ‘new’ keyword, then
+let’s show what the interpreter does when it sees the ‘new’ keyword. The end
+results will both be the same.</p>
+<p>First let’s create our Constructor.</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> Person = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name, age</span>) </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+  <span class="hljs-keyword">this</span>.age = age;
+}
+</code></pre>
+<p>This is a typical JavaScript constructor function. Now whenever we invoke the
+Person function using the ‘new’ keyword, ‘this’ will be bound to the newly
+created object.</p>
+<p>Now let’s add a method onto our Person’s prototype so it will be available on
+every instance of our Person ‘class’.</p>
+<pre><code class="language-javascript">Person.prototype.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">'My name is '</span> + <span class="hljs-keyword">this</span>.name)
+}
+</code></pre>
+<p>Now, because we put the sayName function on the prototype, every instance of
+Person will be able to call the sayName function in order alert that instance’s
+name.</p>
+<p>Now that we have our Person constructor function and our sayName function on its
+prototype, let’s actually create an instance of Person then call the sayName
+function.</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> tyler = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">'Tyler'</span>, <span class="hljs-number">23</span>);
+tyler.sayName() <span class="hljs-comment">// alerts 'My name is Tyler'</span>
+</code></pre>
+<p>So all together the code for creating a Person constructor, adding a function to
+it’s prototype, creating a Person instance, and then calling the function on its
+prototype looks like this.</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> Person = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name, age</span>) </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+  <span class="hljs-keyword">this</span>.age = age;
+}
+
+Person.prototype.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">'My name is '</span> + <span class="hljs-keyword">this</span>.name)
+}
+
+<span class="hljs-keyword">var</span> tyler = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">'Tyler'</span>, <span class="hljs-number">23</span>);
+tyler.sayName() <span class="hljs-comment">// alerts 'My name is Tyler'</span>
+</code></pre>
+<p>Now let’s look at what actually is happening when you use the ‘new’ keyword in
+JavaScript. First thing you should notice is that after using ‘new’ in our
+example, we’re able to call a method (sayName) on ‘tyler’ just as if it were an
+object — that’s because it is. So first, we know that our Person constructor is
+returning an object, whether we can see that in the code or not. Second, we know
+that because our sayName function is located on the prototype and not directly
+on the Person instance, the object that the Person function is returning must be
+delegating to its prototype on failed lookups. In more simple terms, when we
+call tyler.sayName() the interpreter says “OK, I’m going to look on the ‘tyler’
+object we just created, locate the sayName function, then call it. Wait a
+minute, I don’t see it here — all I see is name and age, let me check the
+prototype. Yup, looks like it’s on the prototype, let me call it.”.</p>
+<p>Below is code for how you can think about what the ‘new’ keyword is actually
+doing in JavaScript. It’s basically a code example of the above paragraph. I’ve
+put the ‘interpreter view’ or the way the interpreter sees the code inside of
+notes.</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> Person = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name, age</span>) </span>{
+  <span class="hljs-comment">// The next line creates an object that will</span>
+  <span class="hljs-comment">// delegate to the person's prototype on failed lookups.</span>
+
+  <span class="hljs-comment">//var obj = Object.create(Person.prototype);</span>
+
+  <span class="hljs-comment">// The next line sets 'this' to the newly created object</span>
+  <span class="hljs-comment">// this = obj;</span>
+
+  <span class="hljs-keyword">this</span>.name = name;
+  <span class="hljs-keyword">this</span>.age = age;
+
+  <span class="hljs-comment">// return this;</span>
+}
+</code></pre>
+<p>Now having this knowledge of what the ‘new’ keyword really does in JavaScript,
+creating a Service in Angular should be easier to understand now.</p>
+<p>The biggest thing to understand when creating a Service is knowing that Services
+are instantiated with the ‘new’ keyword. Combining that knowledge with our
+examples above, you should now recognize that you’ll be attaching your
+properties and methods directly to ‘this’ which will then be returned from the
+Service itself. Let’s take a look at this in action.</p>
+<p>Unlike what we originally did with the Factory example, we don’t need to create
+an object then return that object because, like mentioned many times before, we
+used the ‘new’ keyword so the interpreter will create that object, have it
+delegate to it’s prototype, then return it for us without us having to do the
+work.</p>
+<p>First things first, let’s create our ‘private’ and helper function. This should
+look very familiar since we did the exact same thing with our factory. I won’t
+explain what each line does here because I did that in the factory example, if
+you’re confused, re-read the factory example.</p>
+<pre><code class="language-javascript">app.service(<span class="hljs-string">'myService'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">var</span> baseUrl = <span class="hljs-string">'https://itunes.apple.com/search?term='</span>;
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> _finalUrl = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">var</span> makeUrl = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _artist = _artist.split(<span class="hljs-string">' '</span>).join(<span class="hljs-string">'+'</span>);
+    _finalUrl = baseUrl + _artist + <span class="hljs-string">'&amp;callback=JSON_CALLBACK'</span>;
+    <span class="hljs-keyword">return</span> _finalUrl;
+  }
+});
+</code></pre>
+<p>Now, we’ll attach all of our methods that will be available in our controller to
+‘this’.</p>
+<pre><code class="language-javascript">app.service(<span class="hljs-string">'myService'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">var</span> baseUrl = <span class="hljs-string">'https://itunes.apple.com/search?term='</span>;
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> _finalUrl = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">var</span> makeUrl = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _artist = _artist.split(<span class="hljs-string">' '</span>).join(<span class="hljs-string">'+'</span>);
+    _finalUrl = baseUrl + _artist + <span class="hljs-string">'&amp;callback=JSON_CALLBACK'</span>;
+    <span class="hljs-keyword">return</span> _finalUrl;
+  }
+
+  <span class="hljs-keyword">this</span>.setArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">artist</span>) </span>{
+    _artist = artist;
+  }
+
+  <span class="hljs-keyword">this</span>.getArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> _artist;
+  }
+
+  <span class="hljs-keyword">this</span>.callItunes = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    makeUrl()
+    <span class="hljs-keyword">var</span> deferred = $q.defer();
+    $http({
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'JSONP'</span>,
+      <span class="hljs-attr">url</span>: _finalUrl
+    }).success(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+      deferred.resolve(data);
+    }).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      deferred.reject(<span class="hljs-string">'There was an error'</span>);
+    })
+
+    <span class="hljs-keyword">return</span> deferred.promise;
+  }
+
+});
+</code></pre>
+<p>Now just like in our factory, setArtist, getArtist, and callItunes will be
+available in whichever controller we pass myService into. Here’s the myService
+controller (which is almost exactly the same as our factory controller).</p>
+<pre><code class="language-javascript">app.controller(<span class="hljs-string">'myService'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, myService</span>) </span>{
+  $scope.data = {};
+  $scope.updateArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    myService.setArtist($scope.data.artist);
+  }
+
+  $scope.submitArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    myService.callItunes()
+      .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        $scope.data.artistData = data;
+      }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        alert(data);
+      })
+  }
+});
+</code></pre>
+<p>Like I mentioned before, once you really understand what ‘new’ does, Services
+are almost identical to factories in Angular.</p>
+<p><strong>3) Provider</strong></p>
+<p>The biggest thing to remember about Providers is that they’re the only service
+that you can pass into the app.config portion of your application. This is of
+huge importance if you’re needing to alter some portion of your service object
+before it’s available everywhere else in your application. Although very similar
+to Services/Factories, there are a few differences which we’ll discuss.</p>
+<p>First we set up our Provider in a similar way we did with our Service and
+Factory. The variables below are our ‘private’ and helper function.</p>
+<pre><code class="language-javascript">app.provider(<span class="hljs-string">'myProvider'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">var</span> baseUrl = <span class="hljs-string">'https://itunes.apple.com/search?term='</span>;
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> _finalUrl = <span class="hljs-string">''</span>;
+
+  <span class="hljs-comment">// Going to set this property on the config fn below</span>
+  <span class="hljs-keyword">this</span>.thingFromConfig = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">var</span> makeUrl = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _artist = _artist.split(<span class="hljs-string">' '</span>).join(<span class="hljs-string">'+'</span>);
+    _finalUrl = baseUrl + _artist + <span class="hljs-string">'&amp;callback=JSON_CALLBACK'</span>;
+    <span class="hljs-keyword">return</span> _finalUrl;
+  }
+});
+</code></pre>
+<p><em>Again if any portion of the above code is confusing, check out the Factory
+section where I explain what it all does it greater details.</em></p>
+<p>You can think of Providers as having three sections. The first section is the
+‘private’ variables/functions that will be modified/set later (shown above). The
+second section is the variables/functions that will be available in your
+app.config function and are therefore available to alter before they’re
+available anywhere else (also shown above). It’s important to note that those
+variables need to be attached to the ‘this’ keyword. In our example, only
+‘thingFromConfig’ will be available to alter in the app.config. The third
+section (shown below) is all the variables/functions that will be available in
+your controller when you pass in the ‘myProvider’ service into that specific
+controller.</p>
+<p>When creating a service with Provider, the only properties/methods that will be
+available in your controller are those properties/methods which are returned
+from the $get() function. The code below puts $get on ‘this’ (which we know will
+eventually be returned from that function). Now, that $get function returns all
+the methods/properties we want to be available in the controller. Here’s a code
+example.</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">this</span>.$get = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">callItunes</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      makeUrl()
+      <span class="hljs-keyword">var</span> deferred = $q.defer();
+      $http({
+        <span class="hljs-attr">method</span>: <span class="hljs-string">'JSONP'</span>,
+        <span class="hljs-attr">url</span>: _finalUrl
+      }).success(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        deferred.resolve(data);
+      }).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        deferred.reject(<span class="hljs-string">'There was an error'</span>);
+      })
+
+      <span class="hljs-keyword">return</span> deferred.promise;
+    },
+    <span class="hljs-attr">setArtist</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">artist</span>) </span>{
+      _artist = artist;
+    },
+    getArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">return</span> _artist;
+    },
+    <span class="hljs-attr">thingonConfig</span>: <span class="hljs-keyword">this</span>.thingFomConfig
+  }
+}
+</code></pre>
+<p>Now the full Provider code looks like this</p>
+<pre><code class="language-javascript">app.provider(<span class="hljs-string">'myProvider'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+  <span class="hljs-keyword">var</span> baseUrl = <span class="hljs-string">'https://itunes.apple.com/search?term='</span>;
+  <span class="hljs-keyword">var</span> _artist = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> _finalUrl = <span class="hljs-string">''</span>;
+
+  <span class="hljs-comment">// Going to set this property on the config fn below</span>
+  <span class="hljs-keyword">this</span>.thingFromConfig = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">var</span> makeUrl = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _artist = _artist.split(<span class="hljs-string">' '</span>).join(<span class="hljs-string">'+'</span>);
+    _finalUrl = baseUrl + _artist + <span class="hljs-string">'&amp;callback=JSON_CALLBACK'</span>;
+    <span class="hljs-keyword">return</span> _finalUrl;
+  }
+
+  <span class="hljs-keyword">this</span>.$get = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$http, $q</span>) </span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">callItunes</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        makeUrl()
+        <span class="hljs-keyword">var</span> deferred = $q.defer();
+        $http({
+          <span class="hljs-attr">method</span>: <span class="hljs-string">'JSONP'</span>,
+          <span class="hljs-attr">url</span>: _finalUrl
+        }).success(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+          deferred.resolve(data);
+        }).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+          deferred.reject(<span class="hljs-string">'There was an error'</span>);
+        })
+
+        <span class="hljs-keyword">return</span> deferred.promise;
+      },
+      <span class="hljs-attr">setArtist</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">artist</span>) </span>{
+        _artist = artist;
+      },
+      getArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> _artist;
+      },
+      <span class="hljs-attr">thingonConfig</span>: <span class="hljs-keyword">this</span>.thingFomConfig
+    }
+  }
+});
+</code></pre>
+<p>Now just like in our factory and Service, setArtist, getArtist, and callItunes
+will be available in whichever controller we pass myProvider into. Here’s the
+myProvider controller (which is almost exactly the same as our factory/Service
+controller).</p>
+<pre><code class="language-javascript">app.controller(<span class="hljs-string">'myProviderCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, myProvider</span>) </span>{
+  $scope.data = {};
+  $scope.updateArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    myProvider.setArtist($scope.data.artist);
+  }
+
+  $scope.submitArtist = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    myProvider.callItunes()
+      .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        $scope.data.artistData = data;
+      }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+        alert(data);
+      })
+  }
+
+  $scope.data.thingFromConfig = myProvider.thingOnConfig;
+});
+</code></pre>
+<p>As mentioned before, the whole point of creating a service with Provider is to
+be able to alter some variables through the app.config function before the final
+object is passed to the rest of the application. Let’s see an example of that.</p>
+<pre><code class="language-javascript">app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">myProviderProvider</span>) </span>{
+  <span class="hljs-comment">// Note that NG appends 'Provider' to the end of the provider name.</span>
+  myProviderProvider.thingFromConfig = <span class="hljs-string">'This sentence was set in app.config. Providers are the only service that can be passed into config. Check out the code to see how it works.'</span>;
+})
+</code></pre>
+<p>Now you can see how ‘thingFromConfig’ is as empty string in our provider, but
+when that shows up in the DOM, it will be ‘This sentence was set…’.</p>
+<p>Thank you for reading and I hoped this helped you to be able to discern the
+difference between Factory, Service, and Provider in Angular.</p>
+<ul>
+<li>
+<p>To see the full code example and see the code in action, feel free to fork my
+repo at
+<a href="https://github.com/tylermcginnis33/AngularServices">https://github.com/tylermcginnis/AngularServices</a></p>
+</li>
+<li>
+<p>If you enjoyed this, an <a href="http://stackoverflow.com/a/23683176/1867084">upvote on Stack Overflow would be nice</a>.</p>
+</li>
+</ul>
+</div></div><div class="footer" data-reactid="11"><a style="text-decoration:underline;" href="https://twitter.com/tylermcginnis33" data-reactid="12">Tyler McGinnis</a></div></div></div></div></div></div><script src="/bundle.js?t=1481771453756"></script></body></html>
