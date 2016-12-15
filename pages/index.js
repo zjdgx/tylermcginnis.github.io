@@ -23,7 +23,7 @@ export default function SiteIndex (props) {
           <div className='main-inner'>
             {props.route.pages
               .filter((page) => page.data.layout === 'post')
-              .sort((a,b) => b.data.date > a.data.date)
+              .reverse()
               .map((page) => {
                 const { title, description, date, body } = page.data
                 return (
