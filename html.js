@@ -11,8 +11,10 @@ module.exports = React.createClass({
   },
   render() {
     let css
+    let favicon
     if (process.env.NODE_ENV === 'production') {
         css = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.css')}} />
+        favicon = <link rel="shortcut icon" href={prefixLink('/favicon.ico')} />
     }
 
     return (
@@ -21,8 +23,8 @@ module.exports = React.createClass({
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0" />
-        {/*<link rel="shortcut icon" href={prefixLink('/favicon.ico')} />*/}
           <title>{config.siteTitle}</title>
+          {favicon}
           { css }
         </head>
         <body>
