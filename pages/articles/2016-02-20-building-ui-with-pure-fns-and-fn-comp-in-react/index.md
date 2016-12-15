@@ -10,14 +10,6 @@ to use and when to not use a function probably comes pretty natural to you. In
 this post we’re going to learn how to leverage that knowledge to build better
 user interfaces.
 
-> This is an excerpt from my *[React.js
-Program](http://www.reactjsprogram.com/)*, an extremely in depth program to
-learn React.js and the React.js ecosystem. If you’re new to React, I recommend
-*[React.js
-Fundamentals](http://courses.reactjsprogram.com/courses/reactjsfundamentals)* —
-it’s completely free and contains videos, text, and curriculum to work through.
-— [Tyler](http://www.twitter.com/tylermcginnis33)
-
 One of the best parts of React.js is that you can use the same intuition that
 you have about functions for when to create new React components. However,
 instead of your function taking in some arguments and returning a value, your

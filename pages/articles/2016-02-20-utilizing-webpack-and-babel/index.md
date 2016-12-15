@@ -12,14 +12,6 @@ easier, but if you don’t, just hold on and it will get easier. We’re going t
 hyperfocus on the real meat of Webpack for this course and jump into more
 advanced features in other courses.
 
- > This is an excerpt from [React.js Program](http://www.reactjsprogram.com/), the successor of this tutorial series.
-If you like this material, check out the program itself and specifically the
-[React.js
-Fundamentals](http://courses.reactjsprogram.com/courses/reactjsfundamentals)
-course since it’s completely free and contains 12 videos, text, and actual
-curriculum to work through. It’s a more linear approach to learn React and
-the React ecosystem.
-
 The first questions you should ask yourself whenever you’re using a new tool are
 “Why does this thing exist?” and “What problem is this thing solving?”. If you
 can’t eventually answer those two questions, you probably don’t need it. So
