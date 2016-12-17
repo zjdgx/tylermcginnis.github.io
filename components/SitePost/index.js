@@ -10,9 +10,6 @@ export default function SitePost ({route}) {
   const { title, date, body } = route.page.data
   return (
     <div>
-      <div style={{display: 'none'}} className='postmetadata'>
-        Posted on <span className='updated'>{moment(date).format('MMM D, YYYY')}</span>
-      </div>
       <div>
         <Link className='gohome' to={ prefixLink('/') }>
           Back
@@ -20,8 +17,8 @@ export default function SitePost ({route}) {
       </div>
       <div className='blog-single'>
         <div className='text'>
-          <div className='date-published'>
-            {moment(date).format('MMM D YYYY')}
+          <div className='postmetadata'>
+            <span className='updated'>{moment(date).format('MMM D YYYY')}</span>
           </div>
           <h1>{title}</h1>
           <div className='blog-body' dangerouslySetInnerHTML={{__html: body}} />

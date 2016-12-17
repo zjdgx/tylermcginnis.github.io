@@ -73,12 +73,12 @@
 .blog-body a {
 	text-decoration: underline;
 }
-.blog-single h1, .blog-single .date-published, .blog-single .text *:not(div) {
+.blog-single h1, .blog-single .postmetadata, .blog-single .text *:not(div) {
 	max-width: 740px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.date-published {
+.postmetadata {
 	font-size: 16px;
 	padding: 20px 16px;
 	margin: 0;
