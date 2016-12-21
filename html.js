@@ -26,11 +26,11 @@ module.exports = React.createClass({
           <title>{config.siteTitle}</title>
           {favicon}
           { css }
+          <script async src="//platform.twitter.com/widgets.js"></script>
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
           <script src={ prefixLink(`/bundle.js?t=${BUILD_TIME}`) } />
-          <script async src="//platform.twitter.com/widgets.js"></script>
         </body>
       </html>
     )
