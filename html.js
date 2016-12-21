@@ -7,14 +7,14 @@ const BUILD_TIME = new Date().getTime()
 module.exports = React.createClass({
   displayName: 'HTML',
   propTypes: {
-      body: React.PropTypes.string,
+    body: React.PropTypes.string,
   },
   render() {
     let css
     let favicon
     if (process.env.NODE_ENV === 'production') {
-        css = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.css')}} />
-        favicon = <link rel="shortcut icon" href={prefixLink('/favicon.ico')} />
+      css = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.css')}} />
+      favicon = <link rel="shortcut icon" href={prefixLink('/favicon.ico')} />
     }
 
     return (
@@ -30,6 +30,7 @@ module.exports = React.createClass({
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
           <script src={ prefixLink(`/bundle.js?t=${BUILD_TIME}`) } />
+          <script async src="//platform.twitter.com/widgets.js"></script>
         </body>
       </html>
     )

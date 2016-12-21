@@ -2,9 +2,9 @@ import React from 'react'
 import moment from 'moment'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
-import { config } from 'config'
 import './style.css'
 import '../../static/css/highlight.css'
+import PostFooter from './PostFooter'
 
 export default function SitePost ({route}) {
   const { title, date, body } = route.page.data
@@ -23,9 +23,7 @@ export default function SitePost ({route}) {
           <h1>{title}</h1>
           <div className='blog-body' dangerouslySetInnerHTML={{__html: body}} />
         </div>
-        <div className='footer'>
-          <a style={{textDecoration: 'underline'}} href={config.siteTwitterUrl}>{config.siteAuthor}</a>
-        </div>
+        <PostFooter />
       </div>
     </div>
   )

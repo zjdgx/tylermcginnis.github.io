@@ -4,7 +4,6 @@ import './style.css'
 
 SitePage.propTypes = {
   post: React.PropTypes.object.isRequired,
-  pages: React.PropTypes.array,
 }
 
 export default function SitePage (props) {

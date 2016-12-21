@@ -71,7 +71,8 @@
 	line-height: 1.58;
 }
 .blog-body a {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #e94949;
 }
 .blog-single h1, .blog-single .postmetadata, .blog-single .text *:not(div) {
 	max-width: 740px;
@@ -89,13 +90,6 @@
 	max-width: 100%;
 	height: auto;
 	margin: 30px 0;
-}
-.blog-single .footer {
-	max-width: 740px;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 31px;
-	margin-bottom: 31px;
 }
 .gohome {
 	position: fixed;
