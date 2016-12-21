@@ -72,7 +72,7 @@
 }
 .blog-body a {
 	text-decoration: none;
-	color: #e94949;
+	color: #2980b9;
 }
 .blog-single h1, .blog-single .postmetadata, .blog-single .text *:not(div) {
 	max-width: 740px;
