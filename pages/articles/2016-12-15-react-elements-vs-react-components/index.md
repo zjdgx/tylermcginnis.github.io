@@ -280,7 +280,7 @@ that’s exactly what’s happening.
 React.createElement(Icon, null)
 ```
 
-All of these examples, are “creating an React element”
+All of these examples, are “creating a React element”
 
 ```
 React.createElement('div', className: 'container', 'Hello!')
