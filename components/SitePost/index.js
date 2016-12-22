@@ -4,26 +4,23 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import './style.css'
 import '../../static/css/highlight.css'
-import PostFooter from './PostFooter'
+import AboutMe from './AboutMe'
 
-export default function SitePost ({route}) {
-  const { title, date, body } = route.page.data
+export default function SitePost (props) {
+  const { title, date, body } = props.route.page.data
   return (
     <div>
-      <div>
-        <Link className='gohome' to={ prefixLink('/') }>
-          Back
-        </Link>
-      </div>
+      <Link className='gohome' to={ prefixLink('/') }>
+        Back
+      </Link>
+      <AboutMe top={true} />
       <div className='blog-single'>
         <div className='text'>
-          <div className='postmetadata'>
-            <span className='updated'>{moment(date).format('MMM D YYYY')}</span>
-          </div>
           <h1>{title}</h1>
+          <div className='date'>{moment(date).format('MMM D, YYYY')}</div>
           <div className='blog-body' dangerouslySetInnerHTML={{__html: body}} />
         </div>
-        <PostFooter />
+        <AboutMe />
       </div>
     </div>
   )

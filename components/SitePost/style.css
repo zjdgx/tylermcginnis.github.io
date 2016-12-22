@@ -74,17 +74,14 @@
 	text-decoration: none;
 	color: #2980b9;
 }
-.blog-single h1, .blog-single .postmetadata, .blog-single .text *:not(div) {
+.blog-single h1, .blog-single, .blog-single .text *:not(div) {
 	max-width: 740px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.postmetadata {
+.date {
+	text-align: center;
 	font-size: 16px;
-	padding: 20px 16px;
-	margin: 0;
-	line-height: normal;
-	text-align: right;
 }
 .blog-single .text img {
 	max-width: 100%;
