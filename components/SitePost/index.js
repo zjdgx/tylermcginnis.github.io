@@ -16,7 +16,7 @@ export default function SitePost (props) {
       <AboutMe top={true} />
       <div className='blog-single'>
         <div className='text'>
-          <h1>{title}</h1>
+          <h1 className='blog-title'>{title}</h1>
           <div className='date'>{moment(date).format('MMM D, YYYY')}</div>
           <div className='blog-body' dangerouslySetInnerHTML={{__html: body}} />
         </div>
