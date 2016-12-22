@@ -41,33 +41,39 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.blog-single code {
+.blog-single pre {
+	position: relative;
+  overflow: visible;
+  margin-top: 50px;
 	font-size: 18px;
 	border-left: 2px solid #333;
 	border-radius: 0;
 	position: relative;
 	padding-left: 45px;
 }
-.blog-single pre {
-	position: relative;
-  overflow: visible;
-  margin-top: 50px;
-}
-.blog-single pre:before {
+.blog-single pre:before, blockquote:before {
   content: "";
   z-index: 99;
   background-color: #333;
   color: white;
-  background-image: url(/../../braces.svg);
   background-size: 23px;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  left: -16px;
+  left: -18px;
   top: -20px;
   width: 35px;
   height: 35px;
   border-radius: 100%
+}
+
+.blog-single pre:before {
+	background-image: url(/../../braces.svg);
+}
+
+.blog-single blockquote:before {
+	background-size: 27px;
+	background-image: url(/../../rocket.svg);
 }
 
 .blog-single h1 {
@@ -86,12 +92,12 @@
 .blog-single blockquote {
   background: transparent;
   padding: 10px 25px;
-  margin: 40px 0;
-  border-left: .5px solid black;
+  margin: 50px 0;
   position: relative;
   margin-right: -64px;
   text-align: left;
   font-size: 18px;
+  border-left: 2px solid #333;
 }
 .blog-body {
 	line-height: 1.58;
