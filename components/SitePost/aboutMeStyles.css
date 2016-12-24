@@ -1,15 +1,9 @@
 .footer {
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 740px;
+  margin: 0 auto;
   line-height: 31px;
-  margin-bottom: 31px;
+  padding: 20px 0;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-top: 1px solid rgba(0,0,0,.4);
-  padding: 32px 64px;
-  margin-top: 80px;
   align-items: center;
 }
 
@@ -27,10 +21,8 @@
   color: #2980b9;
 }
 
-@media (max-width:900px) {
-  .footer {
-    padding: 0 15px;
-    line-height: 26px;
-    margin-bottom: 26px;
+@media (max-width: 800px) {
+  .author-bio {
+    padding-left: 15px;
   }
 }
