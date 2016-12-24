@@ -2,7 +2,7 @@
   max-width: 740px;
   margin: 0 auto;
   line-height: 31px;
-  padding: 20px 0;
+  padding: 20px 15px;
   display: flex;
   align-items: center;
 }
@@ -21,14 +21,12 @@
   color: #2980b9;
 }
 
-@media (max-width: 800px) {
-  .avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
-    margin-left: 5px;
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
   }
+
   .author-bio {
-    padding-left: 10px;
+    padding-left: 0;
   }
 }
