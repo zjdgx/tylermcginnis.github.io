@@ -16,7 +16,7 @@ export default function SiteSidebar (props) {
             <Link
               style={{textDecoration: 'none', borderBottom: 'none', outline: 'none'}}
               to={ prefixLink('/') }>
-                <img src={prefixLink(profilePic)} width='150' height='150' />
+                <img src={prefixLink(profilePic)} width='150' height='150' alt='Tyler McGinnis Avatar' />
             </Link>
             <h1>
               <Link
