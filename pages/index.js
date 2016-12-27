@@ -20,7 +20,7 @@ export default function SiteIndex (props) {
     <div>
       <Helmet title={'Tyler McGinnis'}
         meta={[
-          {name: "description", content: "Partner at React Training. Google Developer Export. React, JavaScript, and Front End Development Tutorials."},
+          {name: "description", content: "Partner at React Training. Google Developer Expert. React, JavaScript, and Front End Development Tutorials."},
           {name: "keywords", content: "react, reactjs, javascript, front end engineering"}
         ]}
         link={[{rel: "canonical", href: `https://tylermcginnis.com`}]} />
