@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>https://tylermcginnis.com/404.html</loc> <lastmod>2016-12-27T06:59:12.405Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/404.html</loc> <lastmod>2016-12-27T08:47:46.890Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/object-creation-in-javascript-functional-instantiation-vs-prototypal-instantiation-vs-pseudo-e9287b6bbb32/</loc> <lastmod>2013-08-08T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/steps-to-implementing-an-algorithm-5714c47c579d/</loc> <lastmod>2013-08-10T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/coder-combat-a-real-time-one-on-one-programming-competition-8baa3e89fe26/</loc> <lastmod>2013-10-01T09:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/why-every-athlete-should-become-a-software-engineer-a9bfa0a59ca2/</loc> <lastmod>2013-10-01T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/categorizing-sockets-and-broadcasting-to-rooms-with-socket-io-27d6a57b4b96/</loc> <lastmod>2013-10-02T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/angularjs-factory-vs-service-vs-provider-5f426cfe6b8c/</loc> <lastmod>2014-05-04T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/</loc> <lastmod>2014-05-04T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/javascript-the-george-clooney-of-programming-languages-1b28678f41d3/</loc> <lastmod>2014-08-15T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/book-review-javascript-patterns-4-5-5-cc1f22efc4e7/</loc> <lastmod>2014-09-15T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/the-success-of-firebase-an-outsiders-perspective-7dffe0a60778/</loc> <lastmod>2014-10-21T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/react-js-tutorial-pt-1-a-comprehensive-guide-to-building-apps-with-react-js-8ce321b125ba/</loc> <lastmod>2015-01-12T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browserify-5489228dde99/</loc> <lastmod>2015-01-19T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/</loc> <lastmod>2015-01-19T08:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/test-your-react-native-app-on-your-iphone-or-ipad-c632b4beb3ed/</loc> <lastmod>2015-03-27T03:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux-4657ef831895/</loc> <lastmod>2015-04-15T09:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux/</loc> <lastmod>2015-04-15T09:14:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/which-flux-implementation-should-i-use-ef6ecd7898b2/</loc> <lastmod>2015-11-16T09:12:05.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components-630fdfd90c9c/</loc> <lastmod>2015-12-15T11:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/</loc> <lastmod>2015-12-15T11:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/my-biggest-benefit-of-open-source-wasnt-what-it-was-supposed-to-be-123f1fb3c12/</loc> <lastmod>2015-12-31T09:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/building-user-interfaces-with-pure-functions-and-function-composition-in-react-js/</loc> <lastmod>2016-02-20T13:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app-5f804d729d3b/</loc> <lastmod>2016-02-20T05:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js-aa3796ad85aa/</loc> <lastmod>2016-02-25T15:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app/</loc> <lastmod>2016-02-20T05:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/</loc> <lastmod>2016-02-25T15:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/introducing-react-js-program-2c90f269a663/</loc> <lastmod>2016-03-01T14:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/incentivizing-open-source-authors-3830dd00f55e/</loc> <lastmod>2016-06-07T14:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/imperative-vs-declarative-programming/</loc> <lastmod>2016-07-13T17:22:32.952Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
@@ -28,7 +28,7 @@
 <url> <loc>https://tylermcginnis.com/installing-the-facebook-sdk-into-a-react-native-android-and-ios-app/</loc> <lastmod>2016-08-11T16:28:46.001Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/react-elements-vs-react-components/</loc> <lastmod>2016-12-15T15:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://tylermcginnis.com/react-aha-moments/</loc> <lastmod>2016-12-21T11:12:03.284Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/</loc> <lastmod>2016-12-27T06:59:12.405Z</lastmod> <changefreq>weekly</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://tylermcginnis.com/about/</loc> <lastmod>2016-12-27T06:59:12.405Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://tylermcginnis.com/contact/</loc> <lastmod>2016-12-27T06:59:12.405Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/</loc> <lastmod>2016-12-27T08:47:46.890Z</lastmod> <changefreq>weekly</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://tylermcginnis.com/about/</loc> <lastmod>2016-12-27T08:47:46.890Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://tylermcginnis.com/contact/</loc> <lastmod>2016-12-27T08:47:46.890Z</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 </urlset>
