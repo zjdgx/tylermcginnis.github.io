@@ -17,7 +17,7 @@ export default function AboutMe ({top}) {
     <div>
       { top === true ? null : <hr style={{marginBottom: 30}} /> }
       <div className='footer'>
-      <img className='avatar' src={profilePic} />
+      <img className='avatar' src={profilePic} alt='Tyler McGinnis Profile Picture' />
       <div className='author-bio'>
         <p>👋 I'm Tyler. I'm a <a href="https://developers.google.com/experts/people/tyler-mcginnis">Google Developer Expert</a> and a partner at <a href="https://reacttraining.com">React Training</a> where we teach React online, in person, and work on OSS like React Router.</p>
         <Follow username='tylermcginnis33' />

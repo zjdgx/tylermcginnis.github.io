@@ -19,6 +19,10 @@ export default function SiteIndex (props) {
   return (
     <div>
       <Helmet title={'Tyler McGinnis'}
+        meta={[
+          {name: "description", content: "Partner at React Training. Google Developer Export. React, JavaScript, and Front End Development Tutorials."},
+          {name: "keywords", content: "react, reactjs, javascript, front end engineering"}
+        ]}
         link={[{rel: "canonical", href: `https://tylermcginnis.com`}]} />
       <SiteSidebar {...props}/>
       <div className='content'>
@@ -34,13 +38,15 @@ export default function SiteIndex (props) {
                     <time dateTime={moment(date).format('MMMM D, YYYY')}>
                       {moment(date).format('MMMM YYYY')}
                     </time>
-                    <h2>
+                    <h1 style={{
+                      marginTop: 10, marginBottom: 20, lineHeight: '30px', fontSize: '1.6875rem'
+                    }}>
                       <Link
                         style={{borderBottom: 'none', fontWeight: 400}}
                         to={prefixLink(page.path)}>
                           {title}
                       </Link>
-                    </h2>
+                    </h1>
                     <p>{strip(body).slice(0, 180) + '...'}</p>
                     <Link className='readmore' to={ prefixLink(page.path) }>
                       More

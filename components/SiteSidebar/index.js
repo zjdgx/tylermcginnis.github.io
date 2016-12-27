@@ -18,13 +18,13 @@ export default function SiteSidebar (props) {
               to={ prefixLink('/') }>
                 <img src={prefixLink(profilePic)} width='150' height='150' alt='Tyler McGinnis Avatar' />
             </Link>
-            <h1>
+            <h2>
               <Link
                 style={{textDecoration: 'none', borderBottom: 'none', color: 'inherit'}}
                 to={prefixLink('/')}>
                   {config.siteAuthor}
               </Link>
-            </h1>
+            </h2>
             <p>{config.siteDescr}</p>
           </header>
         </div>
