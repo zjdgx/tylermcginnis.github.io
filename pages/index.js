@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import moment from 'moment'
 import { prefixLink } from 'gatsby-helpers'
 import SiteSidebar from '../components/SiteSidebar'
+import Helmet from 'react-helmet'
 
 function strip (str) {
   return str.includes('<hide-from-preview>') === true
@@ -17,6 +18,8 @@ SiteIndex.propTypes = {
 export default function SiteIndex (props) {
   return (
     <div>
+      <Helmet title={'Tyler McGinnis'}
+        link={[{rel: "canonical", href: `https://tylermcginnis.com`}]} />
       <SiteSidebar {...props}/>
       <div className='content'>
         <div className='main'>

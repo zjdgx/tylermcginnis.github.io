@@ -5,11 +5,16 @@ import { prefixLink } from 'gatsby-helpers'
 import './style.css'
 import '../../static/css/highlight.css'
 import AboutMe from './AboutMe'
+import Helmet from "react-helmet"
 
 export default function SitePost (props) {
   const { title, date, body } = props.route.page.data
+
   return (
     <div>
+      <Helmet
+        title={title}
+        link={[{rel: "canonical", href: `https://tylermcginnis.com/${props.route.page.path}`}]} />
       <Link className='gohome' to={ prefixLink('/') }>
         Back
       </Link>

@@ -47,8 +47,6 @@ function generateSiteMap(pages) {
       }
     })
 
-    console.log(urls)
-
   const sitemap = sm.createSitemap({
     hostname: 'https://tylermcginnis.com',
     cacheTime: '60000',
