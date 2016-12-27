@@ -2,7 +2,7 @@
 title: "React Tutorial 1.5: Utilizing Webpack and Babel to build a React.js App"
 date: "2016-02-20T05:12:03.284Z"
 layout: post
-path: "/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app-5f804d729d3b/"
+path: "/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app/"
 ---
 
 Let me preface this section by saying that Webpack is hard. Partially because

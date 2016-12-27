@@ -2,7 +2,7 @@
 title: "An Introduction to Life Cycle Events in React"
 date: "2016-02-25T15:12:03.284Z"
 layout: post
-path: "/an-introduction-to-life-cycle-events-in-react-js-aa3796ad85aa/"
+path: "/an-introduction-to-life-cycle-events-in-react-js/"
 ---
 
 <hide-from-preview>

@@ -2,7 +2,7 @@
 title: "React Tutorial Pt 3: Architecting React.js Apps with Flux."
 date: "2015-04-15T09:14:05.284Z"
 layout: post
-path: "/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux-4657ef831895/"
+path: "/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux/"
 ---
 <hide-from-preview>
 

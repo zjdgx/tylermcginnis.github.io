@@ -2,7 +2,7 @@
 title: "Functional Components vs. Stateless Functional Components vs. Stateless Components"
 date: "2015-12-15T11:12:03.284Z"
 layout: post
-path: "/functional-components-vs-stateless-functional-components-vs-stateless-components-630fdfd90c9c/"
+path: "/functional-components-vs-stateless-functional-components-vs-stateless-components/"
 ---
 
 Earlier today I read Dan Abramov’s [“React Components, Elements, and
