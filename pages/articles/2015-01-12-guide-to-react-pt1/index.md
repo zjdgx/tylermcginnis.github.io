@@ -12,16 +12,16 @@ path: "/react-js-tutorial-pt-1-a-comprehensive-guide-to-building-apps-with-react
 Table of Contents:
 
 **[Pt I: A Comprehensive Guide to Building Apps with
-React.js.](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)**
+React.js.](http://tylermcginnis.com/react-js-tutorial-a-comprehensive-guide-to-building-apps-with-react/)**
 
 [Pt 1.5: Utilizing Webpack and Babel to build a React.js
 App](http://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app/)
 
 [Pt II: Building React.js Apps with Gulp, and
-Browserify.](http://tylermcginnis.com/reactjs-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/)
+Browserify.](http://tylermcginnis.com/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/)
 
 [Pt III: Architecting React.js Apps with
-Flux.](http://tylermcginnis.com/reactjs-tutorial-pt-iii-architecting-react-js-apps-with-flux/)
+Flux.](http://tylermcginnis.com/react-js-tutorial-pt-iii-architecting-react-js-apps-with-flux/)
 
 ~~Pt IV: Add Routing to your React App with React Router. (Coming Soon)~~**
 
