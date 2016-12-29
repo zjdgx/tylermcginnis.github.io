@@ -12,7 +12,7 @@ path: "/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browser
 Table of Contents:
 
 [Pt I: A Comprehensive Guide to Building Apps with
-React.js.](http://tylermcginnis.com/react-js-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
+React.js.](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
 
 [Pt 1.5: Utilizing Webpack and Babel to build a React.js
 App](http://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-to-build-a-react-js-app/)
@@ -21,7 +21,7 @@ App](http://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-
 Browserify.](http://tylermcginnis.com/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/)**
 
 [Pt III: Architecting React.js Apps with
-Flux.](http://tylermcginnis.com/react-js-tutorial-pt-iii-architecting-react-js-apps-with-flux/)
+Flux.](http://tylermcginnis.com/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux/)
 
 ~~Pt IV: Add Routing to your React App with React Router. (Coming Soon)~~**
 
@@ -67,7 +67,7 @@ At this point you should feel comfortable with the following parts of React -
     onChange
 
 If you’re not comfortable with the above, go re-read [part
-1](http://tylermcginnis.com/react-js-tutorial-a-comprehensive-guide-to-building-apps-with-react/).
+1](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/).
 
 At this point you might have noticed that in order to actually build apps with
 React, you need a way to transform your JSX into JS and also a way to
