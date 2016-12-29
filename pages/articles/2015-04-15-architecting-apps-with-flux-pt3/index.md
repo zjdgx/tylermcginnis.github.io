@@ -20,7 +20,7 @@ App](http://tylermcginnis.com/react-js-tutorial-1-5-utilizing-webpack-and-babel-
 Browserify.](http://tylermcginnis.com/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/)
 
 **[Pt III: Architecting React.js Apps with
-Flux.](http://tylermcginnis.com/react-js-tutorial-pt-iii-architecting-react-js-apps-with-flux/)**
+Flux.](http://tylermcginnis.com/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux/)**
 
 ~~Pt IV: Add Routing to your React App with React Router. (Coming Soon)~~**
 
