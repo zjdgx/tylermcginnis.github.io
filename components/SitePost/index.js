@@ -25,7 +25,7 @@ export default function SitePost (props) {
           {name: "og:url", content: url},
           {name: "og:site_name", content: config.shareTitle},
           {name: "og:image", content: articleImage || config.avatar},
-          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:card", content: articleImage ? "summary_large_image" : "summary"},
           {name: "twitter:description", content: description || config.siteDescription},
           {name: "twitter:title", content: title},
           {name: "twitter:site", content: "@tylermcginnis33"},
