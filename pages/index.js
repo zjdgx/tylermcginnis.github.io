@@ -4,6 +4,7 @@ import moment from 'moment'
 import { prefixLink } from 'gatsby-helpers'
 import SiteSidebar from '../components/SiteSidebar'
 import Helmet from 'react-helmet'
+import { config } from 'config'
 
 function strip (str) {
   return str.includes('<hide-from-preview>') === true
@@ -18,12 +19,25 @@ SiteIndex.propTypes = {
 export default function SiteIndex (props) {
   return (
     <div>
-      <Helmet title={'Tyler McGinnis'}
+      <Helmet
+        title={config.siteTitle}
         meta={[
-          {name: "description", content: "Partner at React Training. Google Developer Expert. React, JavaScript, and Front End Development Tutorials."},
-          {name: "keywords", content: "react, reactjs, javascript, front end engineering"}
+          {name: "description", content: config.siteDescription},
+          {name: "keywords", content: "react, reactjs, javascript, front end engineering"},
+          {name: "og:locale", content: config.locale},
+          {name: "og:type", content: "website"},
+          {name: "og:title", content: config.shareTitle},
+          {name: "og:description", content: config.siteDescription},
+          {name: "og:url", content: config.canonicalURL},
+          {name: "og:site_name", content: config.shareTitle},
+          {name: "og:image", content: config.avatar},
+          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:description", content: config.siteDescription},
+          {name: "twitter:title", content: config.shareTitle},
+          {name: "twitter:site", content: "@tylermcginnis33"},
+          {name: "twitter:image", content: config.avatar},
         ]}
-        link={[{rel: "canonical", href: `https://tylermcginnis.com`}]} />
+        link={[{rel: "canonical", href: config.canonicalURL}]} />
       <SiteSidebar {...props}/>
       <div className='content'>
         <div className='main'>

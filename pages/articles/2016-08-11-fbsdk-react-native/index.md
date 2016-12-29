@@ -3,6 +3,8 @@ title: "How to Install the Facebook SDK into a React Native Android or iOS App"
 date: "2016-08-11T16:28:46.001Z"
 layout: post
 path: "/installing-the-facebook-sdk-into-a-react-native-android-and-ios-app/"
+articleImage: "https://cdn-images-1.medium.com/max/1600/1*4FvJS-mWhJJPftIQ32r5eQ.png"
+description: "A guide to installing the Facebook SDK into a React Native App"
 ---
 
 So I made this snarky tweet at 4 a.m. This is my peace offering.

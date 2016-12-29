@@ -3,6 +3,7 @@ title: "Building User Interfaces with Pure Functions and Function Composition in
 date: "2016-02-20T13:12:03.284Z"
 layout: post
 path: "/building-user-interfaces-with-pure-functions-and-function-composition-in-react-js/"
+description: "A guide to building UI with pure functions and function composition in React"
 ---
 
 If you’re reading this you’re probably familiar with the idea of functions. When

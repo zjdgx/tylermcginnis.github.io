@@ -3,6 +3,7 @@ title: "React Tutorial Pt 3: Architecting React.js Apps with Flux."
 date: "2015-04-15T09:14:05.284Z"
 layout: post
 path: "/react-js-tutorial-pt-3-architecting-react-js-apps-with-flux/"
+description: "A guide to understanding the Flux architecture."
 ---
 <hide-from-preview>
 

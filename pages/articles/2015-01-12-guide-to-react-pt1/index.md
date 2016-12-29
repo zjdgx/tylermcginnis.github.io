@@ -3,6 +3,7 @@ title: "React Tutorial Pt 1: A Comprehensive Guide to Building Apps with React.j
 date: "2015-01-12T08:14:05.284Z"
 layout: post
 path: "/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/"
+description: "The most popular guide for learning to build apps with React."
 ---
 
 <hide-from-preview>

@@ -3,6 +3,8 @@ title: "React Elements vs React Components"
 date: "2016-12-15T15:12:03.284Z"
 layout: post
 path: "/react-elements-vs-react-components/"
+articleImage: "https://tylermcginnis.com/react-elements-vs-react-components/component-element.jpg"
+description: "A guide to understanding the difference between Components and Elements in React."
 ---
 
 A few months ago I had, what I thought, was a simple question that I [posted to

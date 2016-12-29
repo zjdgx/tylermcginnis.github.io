@@ -3,6 +3,8 @@ title: 'React "Aha" Moments'
 date: "2016-12-21T11:12:03.284Z"
 layout: post
 path: "/react-aha-moments/"
+articleImage: "https://tylermcginnis.com/react-aha-moments/aha-small-min.jpg"
+description: 'A collection of "Aha" moments while learning React.'
 ---
 
 <figure>

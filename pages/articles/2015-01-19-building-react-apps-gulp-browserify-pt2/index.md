@@ -3,6 +3,7 @@ title: "React Tutorial Pt 2: Building React Applications with Gulp and Browserif
 date: "2015-01-19T08:14:05.284Z"
 layout: post
 path: "/react-js-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/"
+description: "A guide to building a React app with Gulp and Browserify."
 ---
 
 <hide-from-preview>

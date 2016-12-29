@@ -3,6 +3,7 @@ title: 'Imperative vs Declarative Programming'
 date: "2016-07-13T17:22:32.952Z"
 layout: post
 path: "/imperative-vs-declarative-programming/"
+description: "A guide to understanding the difference between Imperative and Declarative programming."
 ---
 
 At this point you’ve undoubtedly heard about imperative programming vs

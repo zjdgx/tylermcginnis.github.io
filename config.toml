@@ -1,5 +1,7 @@
-siteTitle = "Tyler McGinnis"
-siteDescr = "Partner at React Training. Google Developer Expert. OSS Engineer. Egghead.io Author. React Newsletter Creator."
+siteTitle = "Tyler McGinnis: React, JavaScript, and Front End related tutorials and resources"
+
+siteDescr = "Partner at React Training. Google Developer Expert. Egghead.io Author."
+
 siteAuthor = "Tyler McGinnis"
 
 siteTelegramUrl = "#"
@@ -14,3 +16,13 @@ siteVkUrl = "#"
 googleAnalyticsId = "UA-35670702-1"
 
 linkPrefix = "/"
+
+siteDescription = "Partner at React Training. Google Developer Expert. React, JavaScript, and Front End related tutorials and resources."
+
+locale = "en_US"
+
+shareTitle = "Tyler McGinnis' Blog"
+
+avatar = "https://tylermcginnis.com/tyler-mcginnis.jpg"
+
+canonicalURL = "https://tylermcginnis.com"

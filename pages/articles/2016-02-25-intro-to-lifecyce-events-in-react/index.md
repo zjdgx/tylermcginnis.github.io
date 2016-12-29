@@ -3,6 +3,8 @@ title: "An Introduction to Life Cycle Events in React"
 date: "2016-02-25T15:12:03.284Z"
 layout: post
 path: "/an-introduction-to-life-cycle-events-in-react-js/"
+description: "A guide to understanding life cycle events in React"
+articleImage: "https://cdn-images-1.medium.com/max/1600/0*VoYsN6eq7I_wjVV5.png"
 ---
 
 <hide-from-preview>
