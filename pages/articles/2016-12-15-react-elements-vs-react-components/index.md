@@ -285,7 +285,11 @@ React.createElement(Icon, null)
 All of these examples, are “creating a React element”
 
 ```
-React.createElement('div', className: 'container', 'Hello!')
+React.createElement(
+  'div',
+  { className: 'container' },
+  'Hello!'
+)
 
 <div className='container'>Hello!</div>
 
