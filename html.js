@@ -1,6 +1,7 @@
 import React from 'react'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
+import Helmet from 'react-helmet'
 
 const BUILD_TIME = new Date().getTime()
 
@@ -17,13 +18,16 @@ module.exports = React.createClass({
       favicon = <link rel="shortcut icon" href={prefixLink('/favicon.ico')} />
     }
 
+    const head = Helmet.rewind()
+
     return (
       <html lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0" />
-          <title>{config.siteTitle}</title>
+          {head.title.toComponent()}
+          {head.meta.toComponent()}
           {favicon}
           { css }
         </head>

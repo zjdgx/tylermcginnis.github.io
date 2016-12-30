@@ -31,7 +31,7 @@ export default function SiteIndex (props) {
           {name: "og:url", content: config.canonicalURL},
           {name: "og:site_name", content: config.shareTitle},
           {name: "og:image", content: config.avatar},
-          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:card", content: "summary"},
           {name: "twitter:description", content: config.siteDescription},
           {name: "twitter:title", content: config.shareTitle},
           {name: "twitter:site", content: "@tylermcginnis33"},
