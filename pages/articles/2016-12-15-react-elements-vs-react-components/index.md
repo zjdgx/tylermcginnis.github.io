@@ -37,8 +37,8 @@ React element is an object representation of a DOM node*. Notice I used the word
 you’ll see on your screen, instead, it’s just an object representation of it.
 There’s a few reasons for this. The first is that JavaScript objects are
 lightweight — React can create and destroy these elements without too much
-overhead. The second reason is React is able to analyze the object, then analyze
-the actual DOM, and then update the actual DOM only where a change occurred.
+overhead. The second reason is React is able to analyze the object, diff it with the previous object representation to see what changed,
+and then update the actual DOM only where those changes occurred.
 This has some performance upsides to it.
 
 In order to create our object representation of a DOM node (aka React element),
