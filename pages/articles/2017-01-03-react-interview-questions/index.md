@@ -31,7 +31,7 @@ For more info, check out [React Elements vs React Components](http://localhost:8
 
 > When would you use a __Class Component__ over a __Functional Component__?
 
-If your component has state or a life cycle method(s), use a Class component. Otherwise, use a Functional component.
+If your component has state or a lifecycle method(s), use a Class component. Otherwise, use a Functional component.
 
 ***
 
@@ -124,8 +124,7 @@ Here's how I went about solving it.
 
 ```javascript
 import React, { Component, PropTypes } from 'react'
-import fetchUser from './twitterAPI'
-// fetchUser returns a promise
+import fetchUser from 'twitter'
 
 class Twitter extends Component {
   state = {
@@ -215,7 +214,7 @@ Though uncontrolled components are typically easier to implement since you just 
 
 ***
 
-> In which life cycle event do you make AJAX requests and why?
+> In which lifecycle event do you make AJAX requests and why?
 
 AJAX requests should go in the __componentDidMount__ lifecycle event.
 
@@ -229,17 +228,13 @@ There are a few reasons for this,
 
 > What does __shouldComponentUpdate__ do and why is it important?
 
-Above we talked about reconciliation and what React does when setState is called. What __shouldComponentUpdate__ does is it's a lifecycle method that allows us to opt out of this reconciliation process for certain components (and their child components). Why would we ever want to do this? As mentioned above, "The end goal of reconciliation is to, in the most efficient way possible, update the UI based on this new state". If we know that a certain section of our UI isn't going to change, there's no reason to have React go through all the trouble of trying to figure out if it does. By returning false from __shouldComponentUpdate__, React will assume that the current component, and all its children components, will stay the same as they currently are.
+Above we talked about reconciliation and what React does when setState is called. What __shouldComponentUpdate__ does is it's a lifecycle method that allows us to opt out of this reconciliation process for certain components (and their child components). Why would we ever want to do this? As mentioned above, "The end goal of reconciliation is to, in the most efficient way possible, update the UI based on this new state". If we know that a certain section of our UI isn't going to change, there's no reason to have React go through all the trouble of trying to figure out if it should. By returning false from __shouldComponentUpdate__, React will assume that the current component, and all its children components, will stay the same as they currently are.
 
 ***
 
 > How do you tell React to build in __Production__ mode and what will that do?
 
-Typically you'd use Webpack's *DefinePlugin* method to set ___NODE_ENV__ to 'production'. This will strip out things like propType validation and extra warnings. On top of that it's also a good idea to minify your code because React uses Uglify's dead-code elimination to strip out development only code and comments, which will drastically reduce the size of your bundle.
-
-***
-
-> Explain the life cycle of a React component.
+Typically you'd use Webpack's *DefinePlugin* method to set ___NODE_ENV__ to __production__. This will strip out things like propType validation and extra warnings. On top of that it's also a good idea to minify your code because React uses Uglify's dead-code elimination to strip out development only code and comments, which will drastically reduce the size of your bundle.
 
 ***
 
@@ -269,6 +264,10 @@ This is why you want to favor `React.Children.map` because it will take into acc
 ***
 
 > Describe how events are handled in React.
+
+In order to solve cross browser compatability issues, your event handlers in React will be passed instances of *SyntheticEvent*, which is React's cross-browser wrapper around the browser's native event. These synthetic events have the same interface as native events you're used to, except they work identically across all browsers.
+
+What's mildly interesting is that React doesn't actually attach events to the child nodes themselves. React will listen to all events at the top level using a single event listener. This is good for perfomance and it also means that React doesn't need to worry about keeping track of event listeners when updating the DOM.
 
 ***
 
