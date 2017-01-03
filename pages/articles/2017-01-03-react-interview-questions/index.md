@@ -1,6 +1,6 @@
 ---
 title: 'React Interview Questions'
-date: "2017-01-03T03:58:56.223Z"
+date: "2017-01-03T14:58:56.223Z"
 layout: post
 path: "/react-interview-questions/"
 articleImage: "https://tylermcginnis.com/react-interview-questions/react-interview-questions.jpg"

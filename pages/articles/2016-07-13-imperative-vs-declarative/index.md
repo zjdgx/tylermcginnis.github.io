@@ -95,7 +95,7 @@ Lobster employee knows all the imperative steps to get us to the table. Knowing
 the address assumes you have some sort of GPS that knows the imperative steps of
 how to get to your house.
 
-Anautomatic car has some sort of abstraction layer overshifting gears.
+An automatic car has some sort of abstraction layer overshifting gears.
 
 That was the realization that really made it click for me, soI’ll repeat it:
 Many (if not all) declarative approacheshave some sort of underlying imperative
@@ -230,7 +230,7 @@ function add (arr) {
 ```
 
 3.
-```javascript
+```xml
 <Btn
   onToggleHighlight={this.handleToggleHighlight}
   highlight={this.state.highlight}>
