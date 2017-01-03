@@ -99,7 +99,7 @@ render () {
 }
 ```
 
-It's important that each key be unique among siblings. We've talked a few times already about reconciliation and part of this reconciliation process is performing a diff of a new element tree with the most previous one. Keys make this process more efficient when dealing with lists because React can use the key on a child element to quickly know if an element is new or if it was just moved when comparing trees.
+It's important that each key be unique among siblings. We've talked a few times already about reconciliation and part of this reconciliation process is performing a diff of a new element tree with the most previous one. Keys make this process more efficient when dealing with lists because React can use the key on a child element to quickly know if an element is new or if it was just moved when comparing trees. And not only do keys make this process more efficient, but without keys, React can't know which local state corresponds to which item on move. So never neglect keys when mapping.
 
 ***
 
@@ -312,4 +312,4 @@ this.setState((prevState, props) => {
 })
 ```
 
-Nothing is wrong with it 🙂. It's rarely used and not well known, but you can also pass a function to __setState__ that receives the previous state and props and returns a new state, just as we're doing above.
+Nothing is wrong with it 🙂. It's rarely used and not well known, but you can also pass a function to __setState__ that receives the previous state and props and returns a new state, just as we're doing above. And not only is nothing wrong with it, but it's also actively recommended if you're setting state based on previous state.
