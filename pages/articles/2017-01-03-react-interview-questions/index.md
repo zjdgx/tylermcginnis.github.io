@@ -21,13 +21,15 @@ description: 'Have an interview related to React coming up? Here are some questi
 
 > What happens when you call __setState__?
 
-The first thing React will do when setState is called is merge the object you passed into setState into the current state of the component. This will kick off a process called reconciliation. The end goal of reconciliation is to, in the most efficient way possible, update the UI based on this new state. To do this, React will construct a new tree of React elements (which you can think of as an object representation of your UI). Once it has this tree, in order to figure out how the UI should change in response to the new state, React will diff this new tree against the most previous element tree that's it's stored in cache. By doing this, React will then know the exact changes which occurred and by knowing exactly what changes occurred, will able to minimize its footprint on the UI by only making updates where absolutely necessary.
+The first thing React will do when setState is called is merge the object you passed into setState into the current state of the component. This will kick off a process called reconciliation. The end goal of reconciliation is to, in the most efficient way possible, update the UI based on this new state. To do this, React will construct a new tree of React elements (which you can think of as an object representation of your UI). Once it has this tree, in order to figure out how the UI should change in response to the new state, React will diff this new tree against the previous element tree. By doing this, React will then know the exact changes which occurred, and by knowing exactly what changes occurred, will able to minimize its footprint on the UI by only making updates where absolutely necessary.
 
 ***
 
 > What's the difference between an __Element__ and a __Component__ in React?
 
-Simply put, a React element describes what you want to see on the screen. Not so simply put, a React element is an object representation of some UI. A React component is a function or a class which optionally accepts input and returns a React element (typically via JSX which gets transpiled to a `createElement` invocation).
+Simply put, a React element describes what you want to see on the screen. Not so simply put, a React element is an object representation of some UI.
+
+A React component is a function or a class which optionally accepts input and returns a React element (typically via JSX which gets transpiled to a `createElement` invocation).
 
 For more info, check out [React Elements vs React Components](http://localhost:8000/react-elements-vs-react-components/)
 
@@ -216,7 +218,7 @@ class UnControlledForm extends Component {
 }
 ```
 
-Though uncontrolled components are typically easier to implement since you just grab the value from the DOM using refs, it's typically recommended that you favor controlled components over uncontrolled components. The main reasons for this are that controlled components support instant field validation, allow you to conditionally disable/enable buttons, and enforce input formats.
+Though uncontrolled components are typically easier to implement since you just grab the value from the DOM using refs, it's typically recommended that you favor controlled components over uncontrolled components. The main reasons for this are that controlled components support instant field validation, allow you to conditionally disable/enable buttons, enforce input formats, and are more "the React way".
 
 ***
 
