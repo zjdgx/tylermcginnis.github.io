@@ -11,7 +11,7 @@ declarative programming. You might have even searched for what those terms
 actually mean.
 
 Sadly, you probably encountered a definition similar to this, “You know,
-imperative programmingis like __how__ you do something, and declarative
+imperative programming is like __how__ you do something, and declarative
 programming is more like __what__ you do, or something.”
 
 That definition makes perfect sense once you actually know the difference
@@ -86,7 +86,7 @@ Regardless of how I get to your house, what really matters is the car I drive.
 Am I going to drive an *imperative* stick shift car or a *declarative* automatic
 car. Enough metaphors?
 
-Before we dive into code, it’s important to realize thatmany declarative
+Before we dive into code, it’s important to realize that many declarative
 approaches have some sort of imperative abstraction layer. Look at all of our
 examples:
 
@@ -95,10 +95,10 @@ Lobster employee knows all the imperative steps to get us to the table. Knowing
 the address assumes you have some sort of GPS that knows the imperative steps of
 how to get to your house.
 
-An automatic car has some sort of abstraction layer overshifting gears.
+An automatic car has some sort of abstraction layer over shifting gears.
 
-That was the realization that really made it click for me, soI’ll repeat it:
-Many (if not all) declarative approacheshave some sort of underlying imperative
+That was the realization that really made it click for me, so I’ll repeat it:
+Many (if not all) declarative approaches have some sort of underlying imperative
 abstraction.
 
 If that sentence makes sense, you’re doing great!
@@ -207,7 +207,7 @@ that state in the DOM.
 
 3.  This one is a bit subjective, but to me the code above isn’t very readable. I
 can’t just glance at the code and understand what’s going on. My brain needs to
-step through the code just as an interpreter wouldwhile also taking into account
+step through the code just as an interpreter would while also taking into account
 the context in which the code lives(another negativity of mutable data).
 
 All right, enough 💩ing on the code. Let’s now take a look at some declarative
@@ -290,7 +290,7 @@ sentences.
 property is the dual, where semantics are inconsistent under composition and/or
 can be expressed with variations of sets of statements.
 
-> Declarative languages contrast with imperativelanguages which **specify explicit
+> Declarative languages contrast with imperative languages which **specify explicit
 manipulation of the computer’s internal state**; or procedural languages which
 specify an explicit sequence of steps to follow.
 
