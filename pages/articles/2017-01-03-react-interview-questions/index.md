@@ -31,7 +31,7 @@ Simply put, a React element describes what you want to see on the screen. Not so
 
 A React component is a function or a class which optionally accepts input and returns a React element (typically via JSX which gets transpiled to a `createElement` invocation).
 
-For more info, check out [React Elements vs React Components](http://localhost:8000/react-elements-vs-react-components/)
+For more info, check out [React Elements vs React Components](https://tylermcginnis.com/react-elements-vs-react-components/)
 
 ***
 
