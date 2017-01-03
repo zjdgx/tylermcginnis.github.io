@@ -144,7 +144,7 @@ class Twitter extends Component {
       .then((user) => this.setState({user}))
   }
   render () {
-    this.props.children(this.state.user)
+    return this.props.children(this.state.user)
   }
 }
 ```
