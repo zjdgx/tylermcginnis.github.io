@@ -93,6 +93,11 @@ either received from a component’s parent component, or it’s contained in th
 component itself. Before we jump into code, let’s make sure we have a high level
 understanding of components.
 
+
+<figure>
+  <img style="margin: 0px auto; border-radius: 5px" src='profile.png' />
+</figure>
+
 Above we have a picture of my Twitter profile. If we were going to re-create
 this page in React, we would break different sections up into different
 components (highlighted). Notice that components can have nested components
