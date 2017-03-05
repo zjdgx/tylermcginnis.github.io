@@ -4,7 +4,7 @@ date: "2017-03-06T12:12:03.284Z"
 layout: post
 path: "/build-your-own-react-router-v4/"
 articleImage: "https://tylermcginnis.com/build-your-own-react-router-v4/kitchen.jpg"
-description: "There's no better way to learn how React Router works under the hood than building our own version of it."
+description: "Learn how React Router v4 works under the hood by building your own version of it."
 ---
 
 <figure>
