@@ -7,6 +7,10 @@ articleImage: "https://tylermcginnis.com/build-your-own-react-router-v4/kitchen.
 description: "There's no better way to learn how React Router works under the hood than building our own version of it."
 ---
 
+<figure>
+  <img style="margin: 0px auto; border-radius: 5px" src='kitchen.jpg' />
+</figure>
+
 I still remember the feelings when I first started learning about routing in client side applications. At the time I was just a wee lad still getting my feet wet with this whole "Single Page Application" thing and I'd be lying if I said it didn't take a poop all over my brain. From the beginning it's as if my brain treated my application code and my router code as two unique and distinct ideas. They were like step brothers who didn't like each other but were forced to live together anyway.
 
 Over the last few years I have, probably at this point against your approval, been fortunate enough to be able to teach this idea of routing to other developers. Unfortunately, it turns out that most of our brains seem to be wired similarly to mine. I think there's a few reasons for this. First, routing in general is pretty complex. This makes, for those library authors, finding the right abstraction over routing even more complex. Second, because of this complexity, consumers of routing libraries tend to blindly trust the abstraction without really understanding what's going on under the hood. In this tutorial, we'll dive into solving both problems. First the later by recreating our own simplified version of React Router v4 which will then shed some light on the former, that is, whether or not RRv4 is a reasonable abstraction.
