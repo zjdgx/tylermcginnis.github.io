@@ -12,10 +12,10 @@ Here are the 52 books I read this year along with my rating of them
   * Deep Work (5/5)
   * Authority Content (1/5)
   * Tools of Titans (4/5)
-  *
-  *
-  *
-  *
+  * How to Write Copy that Sells (4/5)
+  * The Four Hour Workweek (3/5)
+  * Bird by Bird (3/5)
+  * So Good They Can't Ignore You (3/5)
   *
   *
   *
@@ -120,6 +120,19 @@ Here are the 52 blog posts I wrote this year
 I snowboarded on the following days
   * January 1st
   * January 12th
+  * January 23rd
+  * January 24th
+  * February 4th
+  * February 9th
+  * February 10th
+  * February 11th
+  * February 14th
+  * February 15th
+  * February 19th
+  * February 20th
+  * February 21st
+  * February 22nd
+  * February 23rd
 
 React Training launched the following courses
 
