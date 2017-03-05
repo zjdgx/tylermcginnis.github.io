@@ -7,13 +7,11 @@ articleImage: "todo"
 description: "There's no better way to learn how React Router works under the hood than building our own version of it."
 ---
 
-I still remember the feelings when I first started learning about routing in client side applications. At the time I was just a wee lad still getting my feet wet with this whole "Single Page Application" thing and I'd be lying if I said it didn't take a poop all over my brain. From the beginning it's as if my brain treated my application code and my router code as two unique and distinct ideas. There was my application code, and then there was my routing code. They were like step brothers who didn't like each other but were forced to live together anyway.
+I still remember the feelings when I first started learning about routing in client side applications. At the time I was just a wee lad still getting my feet wet with this whole "Single Page Application" thing and I'd be lying if I said it didn't take a poop all over my brain. From the beginning it's as if my brain treated my application code and my router code as two unique and distinct ideas. They were like step brothers who didn't like each other but were forced to live together anyway.
 
-Over the last few years I have, probably at this point against your approval, been fortunate enough to be able to teach this idea of routing to other developers. Unfortunately, it turns out that most of our brains seem to be wired similarly to mine when it comes to this topic. I think there's a few reasons for this. First, routing in general is pretty complex. This makes, for those library authors, finding the right abstraction over routing even more complex. Second, because of this complexity, consumers of routing libraries tend to blindly trust the abstraction without really understanding what's going on under the hood. In this tutorial we'll dive into solving both problems. First the later by recreating our own simplified version of React Router v4 which will then shed some light on the former, that is, whether or not RRv4 is a reasonable abstraction.
+Over the last few years I have, probably at this point against your approval, been fortunate enough to be able to teach this idea of routing to other developers. Unfortunately, it turns out that most of our brains seem to be wired similarly to mine. I think there's a few reasons for this. First, routing in general is pretty complex. This makes, for those library authors, finding the right abstraction over routing even more complex. Second, because of this complexity, consumers of routing libraries tend to blindly trust the abstraction without really understanding what's going on under the hood. In this tutorial we'll dive into solving both problems. First the later by recreating our own simplified version of React Router v4 which will then shed some light on the former, that is, whether or not RRv4 is a reasonable abstraction.
 
-Here's our app code we'll be using to test our ~React Router implementation once we've built it.
-
-TODO. Get working example to play with.
+Here's our app code we'll be using to test our ~React Router implementation once we've built it. You can play around with the final example [here](http://codepen.io/anon/pen/MpexLL)
 
 ```
 const Home = () => (
@@ -74,13 +72,13 @@ const App = () => (
 )
 ```
 
-If you're unfamiliar with React Router v4, here's the basic premise. `Route`s render some UI when a URL matches a location you specificy in the Route's `path` prop. `Link`s provide a declarative, accessible way to navigate around your app. In other words, the `Link` component allows you to update the URL, and the `Route` component changes your UI based on that new URL. *The focus of this tutorial isn't actually on teaching the basics of RRV4, so if the code above is still confusing, head over to [the official docs](https://reacttraining.com/react-router), play around with the examples, and once you're more comfortable, join us again.*
+If you're unfamiliar with React Router v4, here's the basic premise. `Route`s render some UI when a URL matches a location you specify in the Route's `path` prop. `Link`s provide a declarative, accessible way to navigate around your app. In other words, the `Link` component allows you to update the URL, and the `Route` component changes your UI based on that new URL. *The focus of this tutorial isn't actually on teaching the basics of RRV4, so if the code above is still confusing, head over to [the official docs](https://reacttraining.com/react-router), play around with the examples, and once you're more comfortable, join us again.*
 
 The first thing you should notice is that we've introduced two components that were given to us by the router into our app, `Link` and `Route`. My favorite aspect of React Router v4 is that the API is "Just Components™". What this means is that if you're already familiar with React, the same intuition you have about components and how to compose them, will continue to hold true in regards to your routing code. And even more convenient for our use case here, because we're already familiar with how to create components, creating our own React Router will be nothing more than doing what we're already familiar with, creating more components.
 
 We're going to start off by creating our `Route` component. Before we dive into the code, let's go ahead and check out the API (which conveniently is just which props it takes).
 
-In our example above, you'll notice that it can take in three props. `exact`, `path`, and `component`. This means the `propTypes` for our `Route` component currenty look like this,
+In our example above, you'll notice that it can take in three props. `exact`, `path`, and `component`. This means the `propTypes` for our `Route` component currently look like this,
 
 ```
 static propTypes = {
@@ -109,7 +107,7 @@ static propTypes = {
 }
 ```
 
-Now we know what props `Route` receives, let's talk again about what it actually does. Route "renders some UI when the URL matches a location you specificy in the Route's `path` prop". Based off of that definition we know that Route is going to need some functionality which checks if the current URL matches the component's `path` prop. If it does, we'll render some UI. If it doesn't, we'll do nothing by returning null.
+Now we know what props `Route` receives, let's talk again about what it actually does. Route "renders some UI when the URL matches a location you specify in the Route's `path` prop". Based off of that definition we know that Route is going to need some functionality which checks if the current URL matches the component's `path` prop. If it does, we'll render some UI. If it doesn't, we'll do nothing by returning null.
 
 Let's see what this looks like in code, using a placeholder for our matching function for now
 
@@ -143,7 +141,7 @@ class Route extends Component {
     }
 
     if (component) {
-      // The component prop takes precedant over the
+      // The component prop takes precedent over the
       // render method. If the current location matches
       // the path prop, create a new element passing in
       // match as the prop.
@@ -170,7 +168,7 @@ Let's take a step back for a moment and talk about routing in general. In a clie
 
 ```
 class Route extends Component {
-  propTypes: {
+  static propTypes: {
     path: PropTypes.string,
     exact: PropTypes.bool,
     component: PropTypes.func,
@@ -217,7 +215,7 @@ You should notice that all we've done is added a `popstate` listener when the co
 
 Now, no matter how many `<Route>`s we're rendering, each of them will be listen for, re-match, and re-render based on the forward/back buttons.
 
-One thing we've been "hand waving" over up until this point has been our `matchPath` function. This function is pivitol to our router because it's the function which is going to decide if a current URL matches the path of a `<Route>` component as we talked about above. One nuance to `matchPath` is we need to make sure that we take into account `<Route>`s `exact` prop. If you're not familiar with what `exact` does, here's an explanation straight from the docs
+One thing we've been "hand waving" over up until this point has been our `matchPath` function. This function is pivotal to our router because it's the function which is going to decide if a current URL matches the path of a `<Route>` component as we talked about above. One nuance to `matchPath` is we need to make sure that we take into account `<Route>`s `exact` prop. If you're not familiar with what `exact` does, here's an explanation straight from the docs
 
 
 > When `true`, will only match if the path matches the `location.pathname` _exactly_.
@@ -333,9 +331,297 @@ const matchPatch = (pathname, options) => {
 }
 ```
 
+Earlier I mentioned how there's really just two ways to update the URL if you're the user, via the back/forward buttons, or clicking on an achor tag. We've taken care of re-rendering on back/forward clicks via the `popstate` event listener in our `Route`, now let's take care of the anchor tag by building our our `Link` component.
 
-The way you navigate is by clicking a link, or clicking the back button, we can listen for link clicks by hijacking anchor tags, and we can listen to the back button by setting up popstate event listeners.
+The API for `Link` looks like this,
 
+```
+<Link to='/some-path' replace={false} />
+```
 
-[Sometime later? Finishing paragraph?] At this point you'll notice API is "Just Components ™". I've always said that React will make you a better JavaScript developer. Well, React Router will make you a better React developer. Because everything is "Just Components", if you know React, you know React Router.
+Where `to` is a string and is the location to link to and `replace` is a boolean which when true, clicking the link will replace the current entry in the history stack instead of adding a new one.
 
+Adding those propTypes to our Link component, we get this,
+
+```
+class Link extends Component {
+  static propTypes = {
+    to: PropTypes.string.isRequired,
+    replace: PropTypes.bool,
+  }
+}
+```
+
+Now we know that the render method in our `Link` component needs to return an anchor tag, but we obviously don't want to cause a full page refresh every time we switch routes, so we'll hijack the anchor tag by adding a `onClick` handler to it,
+
+```
+class Link extends Component {
+  static propTypes = {
+    to: PropTypes.string.isRequired,
+    replace: PropTypes.bool,
+  }
+
+  handleClick = (event) => {
+    const { replace, to } = this.props
+    event.preventDefault()
+
+    // route here.
+  }
+
+  render() {
+    const { to, children} = this.props
+
+    return (
+      <a href={to} onClick={this.handleClick}>
+        {children}
+      </a>
+    )
+  }
+}
+```
+
+Now all that's lacking is actually changing the current location. To do this React Router uses [History](https://github.com/reacttraining/history)'s `push` and `replace` methods, but we'll use HTML5's [pushState](https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_pushState()_method) and [replaceState](https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_replaceState()_method) methods to avoid adding in a dependency.
+
+> We're hand waving over the History library in this post as a way to avoid external dependencies but it's crucial for the real React Router code as it normalizes the differences in managing session history in various browser environments.
+
+Both `pushState` and `replaceState` take in three arguments. The first is an object which is associated with the new history entry - we don't need this functionality so we'll just pass in an empty object. The second is a title, which we also don't need so we'll pass in null. The third, and the one we'll actually use, is a relative URL.
+
+```
+const historyPush = (path) => {
+  history.pushState({}, null, path)
+}
+
+const historyReplace = (path) => {
+  history.replaceState({}, null, path)
+}
+```
+
+Now inside of our `Link` component, we'll invoke `historyPush` or `historyReplace` depending on the `replace` prop,
+
+```
+class Link extends Component {
+  static propTypes = {
+    to: PropTypes.string.isRequired,
+    replace: PropTypes.bool,
+  }
+  handleClick = (event) => {
+    const { replace, to } = this.props
+    event.preventDefault()
+
+    replace ? historyReplace(to) : historyPush(to)
+  }
+
+  render() {
+    const { to, children} = this.props
+
+    return (
+      <a href={to} onClick={this.handleClick}>
+        {children}
+      </a>
+    )
+  }
+}
+```
+
+Now there's just one more, albeit crucial addition we need to make. If you were to play around with our example app with our current router code, you'd notice a pretty big problem. When you navigate around, the URL would update, but the UI would stay exactly the same. This is because even though we're changing the URL with our `historyReplace` or `historyPush` functions, our `<Route>`s are unaware of that change and don't know that they should re-render and re-match. To solve this problem, we need to keep track of which `<Route>`s have been rendered and call `forceUpdate` on them whenever a route changes.
+
+> React Router gets around this problem by having using a combination of setState, context, and history.listen inside of a [Router](https://github.com/ReactTraining/react-router/blob/v4/packages/react-router/modules/Router.js#L53) component you wrap your code with.
+
+To keep our router simple, we'll keep track of which `<Route>`s have been rendered by pushing their instances to an array, then whenever a route change occurs, we can loop through that array and call forceUpdate on all the instances.
+
+```
+let instances = []
+
+const register = (comp) => instances.push(comp)
+const unregister = (comp) => instances.splice(instances.indexOf(comp), 1)
+```
+
+Notice we've created two functions. We'll call `register` whenever a `<Route>` is mounted and call `unregister` whenever it unmounts. Then, whenever we call `historyPush` or `historyReplace` (which we will every time a user clicks on a `<Link>`), we can loop through those instances and `forceUpdate`.
+
+Let's update our `<Route>` component first,
+
+```
+class Route extends Component {
+  static propTypes: {
+    path: PropTypes.string,
+    exact: PropTypes.bool,
+    component: PropTypes.func,
+    render: PropTypes.func,
+  }
+
+  componentWillMount() {
+    addEventListener('popstate', this.handlePop)
+    register(this)
+  }
+
+  componentWillUnmount() {
+    unregister(this)
+    removeEventListener('popstate', this.handlePop)
+  }
+
+  ...
+}
+```
+
+Now, let's update `historyPush` and `historyReplace`
+
+```
+const historyPush = (path) => {
+  history.pushState({}, null, path)
+  instances.forEach(instance => instance.forceUpdate())
+}
+
+const historyReplace = (path) => {
+  history.replaceState({}, null, path)
+  instances.forEach(instance => instance.forceUpdate())
+}
+```
+
+🎉 now whenever the URL changes, whether that's via the back/forward buttons or via clicking on a `<Link>`, each `<Route>` will be aware of that in order to re-match and re-render.
+
+Now, our full router code looks like this code below, and are example app above works perfectly with it.
+
+```
+import React, { PropTypes, Component } from 'react'
+
+let instances = []
+
+const register = (comp) => instances.push(comp)
+const unregister = (comp) => instances.splice(instances.indexOf(comp), 1)
+
+const historyPush = (path) => {
+  history.pushState({}, null, path)
+  instances.forEach(instance => instance.forceUpdate())
+}
+
+const historyReplace = (path) => {
+  history.replaceState({}, null, path)
+  instances.forEach(instance => instance.forceUpdate())
+}
+
+const matchPath = (pathname, options) => {
+  const { exact = false, path } = options
+
+  if (!path) {
+    return {
+      path: null,
+      url: pathname,
+      isExact: true
+    }
+  }
+
+  const match = new RegExp(`^${path}`).exec(pathname)
+
+  if (!match)
+    return null
+
+  const url = match[0]
+  const isExact = pathname === url
+
+  if (exact && !isExact)
+    return null
+
+  return {
+    path,
+    url,
+    isExact,
+  }
+}
+
+class Route extends Component {
+  static propTypes: {
+    path: PropTypes.string,
+    exact: PropTypes.bool,
+    component: PropTypes.func,
+    render: PropTypes.func,
+  }
+
+  componentWillMount() {
+    addEventListener('popstate', this.handlePop)
+    register(this)
+  }
+
+  componentWillUnmount() {
+    unregister(this)
+    removeEventListener('popstate', this.handlePop)
+  }
+
+  handlePop = () => {
+    this.forceUpdate()
+  }
+
+  render() {
+    const {
+      path,
+      exact,
+      component,
+      render,
+    } = this.props
+
+    const match = matchPath(location.pathname, { path, exact })
+
+    if (!match)
+      return null
+
+    if (component)
+      return React.createElement(component, { match })
+
+    if (render)
+      return render({ match })
+
+    return null
+  }
+}
+
+class Link extends Component {
+  static propTypes = {
+    to: PropTypes.string.isRequired,
+    replace: PropTypes.bool,
+  }
+  handleClick = (event) => {
+    const { replace, to } = this.props
+
+    event.preventDefault()
+    replace ? historyReplace(to) : historyPush(to)
+  }
+
+  render() {
+    const { to, children} = this.props
+
+    return (
+      <a href={to} onClick={this.handleClick}>
+        {children}
+      </a>
+    )
+  }
+}
+```
+
+Bonus: The React Router API also comes with a `<Redirect>` component. Using the code we've previously written, creating this component is pretty straight forward
+
+```
+class Redirect extends Component {
+  static defaultProps = {
+    push: false
+  }
+
+  static propTypes = {
+    to: PropTypes.string.isRequired,
+    push: PropTypes.bool.isRequired,
+  }
+
+  componentDidMount() {
+    const { to, push } = this.props
+
+    push ? historyPush(to) : historyReplace(to)
+  }
+
+  render() {
+    return null
+  }
+}
+```
+
+Notice this component isn't actually rendering any UI, instead, it's acting purely as a route director, hence the name.
+
+I hope this has helped you create a better mental model of what's happening in React Router while also helping you to gain an appreciation for React Router's elegance and "Just Components" API. I've always said that React will make you a better JavaScript developer. I know believe that React Router will make you a better React developer. Because everything is just components, if you know React, you know React Router.
