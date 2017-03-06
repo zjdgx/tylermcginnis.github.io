@@ -637,3 +637,5 @@ class Redirect extends Component {
 Notice this component isn't actually rendering any UI, instead, it's acting purely as a route director, hence the name.
 
 I hope this has helped you create a better mental model of what's happening in React Router while also helping you to gain an appreciation for React Router's elegance and "Just Components" API. I've always said that React will make you a better JavaScript developer. I now also believe that React Router will make you a better React developer. Because everything is just components, if you know React, you know React Router.
+
+ps. shoutsout to [Ryan](https://twitter.com/ryanflorence) who created the first implementation of the mini router and helped me with this post.
