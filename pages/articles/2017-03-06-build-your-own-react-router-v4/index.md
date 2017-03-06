@@ -323,7 +323,7 @@ const matchPatch = (pathname, options) => {
   const url = match[0]
   const isExact = pathname === url
 
-  if (exact && !exact) {
+  if (exact && !isExact) {
     // There was a match, but it wasn't
     // an exact match as specified by
     // the exact prop.
