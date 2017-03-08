@@ -231,7 +231,7 @@ One thing we've been "hand waving" over up until this point has been our `matchP
 | `/one`  | `/one/two`  | `true` | no |
 | `/one`  | `/one/two`  | `false` | yes |
 
-Now, let's dive into the implementation of our `matchPath` function. If you look back at our `Route` component, you'll see that the signature for `matchPatch` looks like this,
+Now, let's dive into the implementation of our `matchPath` function. If you look back at our `Route` component, you'll see that the signature for `matchPath` looks like this,
 
 ```
 const match = matchPath(location.pathname, { path, exact })
@@ -240,7 +240,7 @@ const match = matchPath(location.pathname, { path, exact })
 Where `match` is either an object or null depending on if there was a match. Based on that signature, we can build out the first part of `matchPath` like this,
 
 ```
-const matchPatch = (pathname, options) => {
+const matchPath = (pathname, options) => {
   const { exact = false, path } = options
 }
 ```
@@ -250,7 +250,7 @@ Here we're using some ES6 magic. We're saying "create a variable called exact wh
 Earlier I mentioned "the reason `path` isn't required is because if a `Route` isn't given a path, it will automatically be rendered". Well since it's indirectly our `matchPath` function which decides if something is rendered or not (by whether there's a match), let's add that functionality now.
 
 ```
-const matchPatch = (pathname, options) => {
+const matchPath = (pathname, options) => {
   const { exact = false, path } = options
 
   if (!path) {
@@ -266,7 +266,7 @@ const matchPatch = (pathname, options) => {
 Now comes the matching part. React Router uses [pathToRegex](https://github.com/pillarjs/path-to-regexp) for this, we'll simplify things and just use a simple Regex.
 
 ```
-const matchPatch = (pathname, options) => {
+const matchPath = (pathname, options) => {
   const { exact = false, path } = options
 
   if (!path) {
@@ -302,7 +302,7 @@ Here is every `match` when our example app routes to `/topics/components
 Now that we know what the `match` that `.exec` is returning, all we need to do now is figure out if there's a match.
 
 ```
-const matchPatch = (pathname, options) => {
+const matchPath = (pathname, options) => {
   const { exact = false, path } = options
 
   if (!path) {
