@@ -65,7 +65,7 @@ Here are the 52 books I read this year along with my rating of them
 Here are the 52 blog posts I wrote this year
 
   * [React Interview Questions](https://tylermcginnis.com/react-interview-questions/)
-  *
+  * [Build your own React Router v4](https://tylermcginnis.com/build-your-own-react-router-v4/)
   *
   *
   *
@@ -133,6 +133,10 @@ I snowboarded on the following days
   * February 21st
   * February 22nd
   * February 23rd
+  * March 6th
+  * March 7th
+  * March 9th
+  * March 10th
 
 React Training launched the following courses
 

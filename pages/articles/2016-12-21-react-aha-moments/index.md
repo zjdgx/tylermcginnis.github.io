@@ -30,7 +30,7 @@ The most common reaction I see from first timers using React is "React seems coo
 
 ***
 
-> "Components don't necessary have to correspond to DOM nodes."
+> "Components don't necessarily have to correspond to DOM nodes."
 
 When we first learn React we're taught that "Components are the building blocks of React. They take in input and return some UI (descriptor)". Does that mean that every component needs to directly return UI descriptors as we're typically taught? What if we wanted to have a component render another component (Higher Order Component pattern)? What if we wanted a component to manage some slice of state and then instead of returning a UI descriptor, it returns a function invocation passing in the state (Render Props pattern)? What if we had a component that was in charge of managing sound rather than a visual UI, what would it return? What's great about React is you don't __have__ to return typical "views" from your components. As long as what eventually gets returned is a React element, null, or false, you're good.
 
@@ -82,6 +82,6 @@ If you think about the anatomy of a React component, it usually involves some st
 
 ***
 
-> "If you try to keep most of your component pure, stateless things become a lot simpler to maintain."
+> "If you try to keep most of your components pure, stateless things become a lot simpler to maintain."
 
 This is another benefit of separating your presentational components from your container components. State is the sidekick of inconsistency. By drawing the right lines of separation, you're able to drastically improve the predictability of your application by encapsulating complexity.
